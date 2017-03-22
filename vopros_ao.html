@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АстралОтчет - вопросы и ответы</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+  <body>
+   <footer class="footer"></footer>
+
+   <section class="main row">
+   <!-- Левый блок - меню-->
+     <div class="main__left small-12 large-3 columns">
+       <ul class="menu vertical">
+          <li class="active"><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a></li>
+          <li><a href="#">1С-Отчетность - вопросы и ответы</a></li>
+        </ul>
+     </div>
+
+    <!-- Правый блок - вопросы ответы--> 
+     <div class="main__right small-12 large-9 columns">
+     <!-- Раздел Работа с программой -->
+      <h3 class="main__right-title">Работа с программой Астрал Отчет</h3>
+      <p class="main__right-subtitle">Категория содержит ответы на общие вопросы, возникающие в процессе эксплуатации программного обеспечения: проблемы с установкой и подключением ПО, выдача системой сообщений с описанием возникшей ошибки и т.д.</p>
+       <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item " data-accordion-item is-active>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как можно просмотреть ошибки при получении отрицательного протокола?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для этого нужно обратиться пункту меню «Реестр документооборота», после чего выбрать подменю «Направление». Затем необходимо нажать кнопку «Отчет» и в открывшемся окне выбрать вкладку «Отрицательный протокол». В левой части диалога появится раздел «Содержимое», в котором можно найти всю необходимую информацию о возникающих ошибках. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как восстановить данные из резервной копии?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Нужно войти в меню «Настройки» и выбрать пункт «Восстановить данные из архива». Резервная копия данных хранится в папке AstralReportUserData.zip. В том случае, если требуется восстановить только данные об отправленных и полученных файлах, нужно открыть файл с расширением .bak, который находится в папке, размещенной по адресу C:\Program Files (x86)\Astral\AstralReport\Backups. После запуска восстанавливающего сведения файла, потребуется перезагрузить программу. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Некорректное завершение сеанса связи.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Ошибка может быть вызвана некорректной работой интернет-соединения, блокировкой программы антивирусом, брандмауэром или файерволом. В случае необходимости на время работы с ПО их необходимо отключить. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка 500 при работе Мастера связи.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для решения проблемы необходимо проверить наличие доступа в интернет, отключить все установленные на компьютере антивирусы, брандмауэры и тому подобные программы, блокирующие поступление стороннего контента. В том случае, если указанные действия не приносят результатов, необходимо связаться со службой технической поддержки Астрал Отчет для того чтобы выяснить точную причину отсутствия доступа.  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При мастере связи возникает ошибка 417.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Такая ошибка возникает в результате некорректной работы используемого прокси-сервера. В этом случае необходимо проверить его настройки, обратившись в меню «Файл» и выбрав в нем пункт «Настройки». В открывшемся окне нужно изменить параметры отправки отчетов и обновления программы, указав в соответствующих графах 80-й и 85-й порты. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как изменить реквизиты, которые не изменяются в редакторе отчетов?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            База данных со всеми реквизитами, используемыми при формировании отчетной документации, содержится в папке, размещенной по адресу C:\ProgramFiles\Astral\AstralReport\Editors\Excel\users\**_**********_*********(папка ИНН/КПП организации). Для изменения необходимых данных необходимо внести правки в содержимое файла rekv.txt. Редактирование информации должно осуществляться только при закрытом Редакторе отчетов. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Вопросы по заполнению той или иной формы.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Поля формы, подлежащие заполнению, окрашены в разные цвета. Белые поля заполняются программой автоматически, желтые подлежат заполнению бухгалтером вручную, а зеленые заполняются программой после того, как специалист внесет данные в желтые поля. Проверить готовый документ на наличие ошибок можно с помощью сервиса «Проверка заполнения», который находится в меню «Надстройки». 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">В момент импорта отчетов появляется окно с просьбой ввода пароля контейнера закрытого ключа.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Стандартный пароль, предустановленный разработчиками ПО, представляет собой комбинацию цифр вида 123456 (СКЗИ ViPNet CSP) или 1234567890 (СКЗИ Крипто Про).  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как откорректировать отчет?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для этого потребуется экспортировать документ, который нужно отредактировать, из архива. Осуществляется данная процедура в следующей последовательности: - перейти на вкладку «Архив» в Редакторе отчетов; - выбрать нужный отчет; - нажать кнопку «Экспорт»; - в открывшемся окне указать имя нового файла; - перейти на вкладку «Подготовка» и создать в ней пустую форму; - в меню «Надстройки» выбрать пункт «Импорт данных в формате»; - в открывшемся окне выбрать ранее экспортированный из архива файл; - приступить к редактированию. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При попытке открытия редактора отчетов возникает ошибка, редактор не открывается.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Эта ошибка означает, что на компьютере уже открыто приложение MS Excel. Необходимо закрыть его, после чего запустить Редактор отчетов.  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">По отчетам, отправленным в налоговый орган, пришло сообщение об ошибке «Идентификатор документооборота не уникален».</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Сформируйте отчет заново, после чего повторите попытку его отправки в налоговый орган. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При импорте отчета ошибка "Данный файл не является файлом отчетности"</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Имя сформированного файла не соответствует не одному из стандартов, установленных для документации, передаваемой в контролирующие органы, либо импорт документа происходит в плагин, не соответствующий его получателю. Имя файла должно соответствовать следующему шаблону: Для ФНС: вид документа_имя нал. декларации_код НО_код НО_ИНН,КПП_дата формирования_уникальный идентификатор.xml.
+            Для ПФР: PFR-700-Y-год отчётности-рег. номер ПФР-DCK-номер пачки-DPT-000000-DCK-00000.XML.
+            Для ФСС: рег. номер ФСС_год_период отчётности.xml. 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Где хранятся сформированные в программе подготовки «Астрал-Отчет» документы?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Подготовленные и сохраненные в программе Астрал Отчет документы можно найти в папке, размещенной по адресу C:\Program Files\Astral\AstralReport\Editors\Excel\OutDoc.  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">После нажатия на кнопку «Вход» возникает ошибка «В хранилище сертификатов не удалось обнаружить сертификат абонента со следующими параметрами...»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Нужно убедиться, что в хранилище сертификатов присутствует сертификат. Это можно сделать, выполнив следующую последовательность команд: «Пуск» - «Панель управления» - «Свойства обозревателя» - «Содержание» - «Сертификаты». В открывшемся окне необходимо перейти на вкладку «Состав» и выбрать параметр «Идентификатор ключа субъекта». В том случае, если требуемый сертификат найден, нужно убедиться в том, что срок его действия не истек, а также в наличии корневого и промежуточного сертификатов, перейдя на вкладку «Путь сертификации» 
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка: Процесс не может получить доступ к файлу "C:\Program Files\Astral\AstralReport\Editors\Excel\addMain.xls", так как этот файл используется другим процессом.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для решения этой проблемы необходимо запустить диспетчер задач, нажав комбинацию клавиш Ctrl+Alt+Delete, после чего в открывшемся окне на вкладке «Процессы» найти процесс EXCEL.exe и принудительно завершить его. Затем нужно заново запустить программу.  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как перенести программу на другой компьютер?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для этого потребуется выполнить следующую последовательность действий: - создать резервную копию базы данных на компьютере, использовавшемся ранее (эта опция находится в подменю «Создать архивную копию» меню «Настройки»); - полученный файл перенести на новый компьютер любым удобным способом; - установить на нем программный пакет Астрал Отчет; - запустить программу и загрузить в нее сформированную базу данных, зайдя в меню «Настройки» и выбрав в нем пункт «Восстановить данные из архива».
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Ответ   
+          </div>
+        </li>
+        <!-- ... -->
+      </ul>
+      <!-- Конец блока Работа с программой-->
+
+
+    </div>
+    <!-- Конец правого блока -->
+   </section>
+   
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
