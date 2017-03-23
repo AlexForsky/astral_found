@@ -23,7 +23,7 @@
                 <li><a href="#work_ao">Работа с программой Астрал Отчет</a></li>
                 <li><a href="#pfr_ao">Ошибки ПФР</a></li>
                 <li><a href="#fns_ao">Ошибки ФНС</a></li>
-                <li><a href="#">Ошибки SQL</a></li>
+                <li><a href="#sql_ao">Ошибки SQL</a></li>
                 <li><a href="#">Ошибки VipNet CSP и КриптоПро</a></li>
               </ul>
             </li>
@@ -371,6 +371,80 @@
       </ul>
 
       <!--Конец блока ошибки ФНС  --> 
+
+     <!-- Блок ошибки SQL  --> 
+    <h3 class="main__right-title" id="sql_ao">Ошибки SQL</h3>
+      <p class="main__right-subtitle">Установка SQL может вызвать у пользователя ряд затруднений, справиться с которыми он сможет самостоятельно. Возникающая в ходе инсталляции ошибка SQL, препятствующая возможности нормального использования ПО в работе, может быть ликвидирована с помощью инструкции, размещенной в данном разделе каталога.</p>
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item " data-accordion-item is-active>
+          <a href="#" class="accordion-title accordion-title_fontsize">При установке SQL Server появляется ошибка 5023 и просьба обратится к справочной службе установки SQL Server.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Возникновение такой ошибки связано с некорректной работой системной библиотеки. Для ее решения необходимо восстановить библиотеку вручную, либо произвести возврат системы к ранее созданной точке восстановления, или же полностью переустановить систему.   
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка SQL: [Microsoft][SQL Native Client]Поставщик SSL: Указанная функция не поддерживается.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Ошибка связана с неправильной установкой криптопровайдера. Необходимо удалить его с рабочего компьютера, установить MS SQL Server, после чего заново установить криптопровайдер.   
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При установке SQL и запуске ПО «Астрал Отчет», возникают следующая ошибка: «На обоих концах канала отсутствуют процессы».</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Это может быть связано с тем, что на одном компьютере установлено сразу два СЗКИ. В этом случае необходимо удалить их с компьютера, после чего заново установить более подходящее СЗКИ.   
+          </div>
+        </li>
+        <li class="accordion-item innvisible" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Ответ   
+          </div>
+        </li>
+            
+
+      </ul>
+
+      <!--Конец блока ошибки  SQL-->
+    
+
+      <!-- Блок ViPNet CSP и КриптоПро -->
+    <h3 class="main__right-title" id="crypt_ao">ViPNet CSP и КриптоПро</h3>
+      <p class="main__right-subtitle">Использование КриптоПро сопряжено с решением некоторых задач как на стадии установки программы, так и в процессе ее эксплуатации. Ответы на часто задаваемые вопросы, возникающие в процессе работы с КриптоПро (или с  ViPNet , если в организации ведется использование ViPNet), можно найти в соответствующем информационном разделе.</p>
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item " data-accordion-item is-active>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как получить программу Крипто Про CSP?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Эту программу можно скачать с сайта разработчика <a href="http://www.cryptopro.ru/" target="_blank" title="Переход на сайт КриптоПро">http://www.cryptopro.ru/</a>, предварительно зарегистрировавшись на нем.   
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как ввести серийный номер лицензии КриптоПРО?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            В программе Крипто Про серийный номер можно ввести во вкладке «Общие». В программе Крипто Про PKI нужно войти в меню «Управление лицензиями», подменю «Крипто Про – Все задачи». В открывшемся окне нажать кнопку «Ввести серийный номер», после чего появится соответствующая форма.В программе Крипто Про серийный номер можно ввести во вкладке «Общие». В программе Крипто Про PKI нужно войти в меню «Управление лицензиями», подменю «Крипто Про – Все задачи». В открывшемся окне нажать кнопку «Ввести серийный номер», после чего появится соответствующая форма.   
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как зарегистрировать ViPNet CSP?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Через меню «Пуск» необходимо найти папку VipNet, выбрать в ней подпапку VipNet CSP, после чего нажать кнопку «Настройка криптопровайдера» и выбрать пункт «Зарегистрировать VipNet CSP». В открывшемся окне нужно нажать «Запрос на регистрацию», выбрать способ «Через интернет», после чего ввести серийный номер, полученный при регистрации на сайте <a href="http://www.infotecs.ru/" target="_blank" title="Переход на сайт Инфотекс">http://www.infotecs.ru/</a>, и адрес электронной почты.   
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При входе в Астрал выходит сообщение, что срок действия этой версии КриптоПро истек. Программа будет работать в ограниченном режиме.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Необходимо продлить лицензию на данное ПО. Для этого потребуется обратиться в организацию, через которую программный пакет был приобретен.   
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При входе в Астрал сообщение "закончился демо период VipNet CSP".</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Истек период времени, в течение которого можно было использовать программу без регистрации – необходимо зарегистрировать программу.    
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Конец блока ViPNet CSP и КриптоПро -->
 
     </div>
     <!-- Конец правого блока -->
