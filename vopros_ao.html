@@ -11,21 +11,31 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
   </head>
   <body>
-   <footer class="footer"></footer>
+   <header class="header"></header>
 
    <section class="main row">
    <!-- Левый блок - меню-->
-     <div class="main__left small-12 large-3 columns">
-       <ul class="menu vertical">
-          <li class="active"><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a></li>
-          <li><a href="#">1С-Отчетность - вопросы и ответы</a></li>
-        </ul>
+     <div class="main__left small-12 large-3 columns" data-sticky-container>
+        <div class="sticky" data-sticky data-margin-top="0">
+         <ul class="menu vertical">
+            <li class="active"><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a>
+              <ul class="nested vertical menu">
+                <li><a href="#work_ao">Работа с программой Астрал Отчет</a></li>
+                <li><a href="#">Ошибки ПФР</a></li>
+                <li><a href="#">Ошибки ФНС</a></li>
+                <li><a href="#">Ошибки SQL</a></li>
+                <li><a href="#">Ошибки VipNet CSP и КриптоПро</a></li>
+              </ul>
+            </li>
+            <li><a href="vopros_1co.html">1С-Отчетность - вопросы и ответы</a></li>
+          </ul>
+        </div>
      </div>
 
     <!-- Правый блок - вопросы ответы--> 
      <div class="main__right small-12 large-9 columns">
      <!-- Раздел Работа с программой -->
-      <h3 class="main__right-title">Работа с программой Астрал Отчет</h3>
+      <h3 class="main__right-title" id="work_ao">Работа с программой Астрал Отчет</h3>
       <p class="main__right-subtitle">Категория содержит ответы на общие вопросы, возникающие в процессе эксплуатации программного обеспечения: проблемы с установкой и подключением ПО, выдача системой сообщений с описанием возникшей ошибки и т.д.</p>
        <ul class="accordion" data-accordion data-allow-all-closed="true">
         <li class="accordion-item " data-accordion-item is-active>
@@ -141,7 +151,7 @@
     <!-- Конец правого блока -->
    </section>
    
-    
+    <footer class="footer"></footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>

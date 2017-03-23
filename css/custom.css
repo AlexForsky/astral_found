@@ -1,4 +1,4 @@
-.footer {
+.header, .footer {
   min-height: 85px;
   background-color: #F5F3F3;
 }
@@ -6,7 +6,8 @@
 
 /* Увеличение размера шрифта в заголовках аккордеона*/
 .accordion-title_fontsize {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 
