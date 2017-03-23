@@ -16,7 +16,7 @@
    <section class="main row">
    <!-- Левый блок - меню-->
      <div class="main__left small-12 large-3 columns" data-sticky-container>
-        <div class="sticky" data-sticky data-margin-top="0">
+        <div class="sticky" data-sticky data-margin-top="6">
          <ul class="menu vertical">
             <li class="active"><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a>
               <ul class="nested vertical menu">
@@ -134,6 +134,55 @@
           <a href="#" class="accordion-title accordion-title_fontsize">Как перенести программу на другой компьютер?</a>
           <div class="accordion-content accordion-content_text" data-tab-content>
             Для этого потребуется выполнить следующую последовательность действий: - создать резервную копию базы данных на компьютере, использовавшемся ранее (эта опция находится в подменю «Создать архивную копию» меню «Настройки»); - полученный файл перенести на новый компьютер любым удобным способом; - установить на нем программный пакет Астрал Отчет; - запустить программу и загрузить в нее сформированную базу данных, зайдя в меню «Настройки» и выбрав в нем пункт «Восстановить данные из архива».
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Как произвести перезагрузку обновлений («Откат») ПП «Астрал Отчет»?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Произвести перезагрузку обновлений в случае необходимости можно двумя способами: 1. Вручную через файл AstralReportUpdate.xml . Его можно найти, обратившись к каталогу C:\Program Files\Astral\AstralReport. Этот документ необходимо открыть с помощью программы Блокнот, после чего в строке указать номер актуальной версии программы и сохранить измененный файл. При последующем запуске программа начнет загружать обновления с сервера ПО.<br>
+            2. Автоматически через меню программы. Для этого необходимо выбрать в нем пункт «Файл». В выпавшем списке выбрать операцию «Обновление» и нажать кнопку «Откат программы». После этого на экране появится окно, в котором пользователь сможет самостоятельно выбрать версию ПО, с которой будут загружены обновления.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">После запуска программы возникает ошибка: Root element is Missing (не найден корневой элемент)</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            При возникновении такой ошибки требуется заменить файл mercury2.config, находящийся в корневом каталоге C:\Program Files (x86)\Astral\AstralReport файлом, который можно загрузить по ссылке. Кроме того, можно переустановить платформу Net Framework, файл для инсталляции которой находится на установочном диске.    
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При входе в программу ошибка mercury.</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Требуется переустановить Астрал Отчет, предварительно проверив рабочий компьютер на наличие вирусов.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Программа не обновляется. Что делать?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            В этом случае можно выполнить следующие действия: - проверить стабильность работы интернет-соединения; - временно отключить антивирус и другие программы, обеспечивающие безопасность работы в сети (брандмауэр, файерволы и т.д.); - проверить настройки прокси-сервера; - обеспечить для учетной записи, с которой ведется работа с ПО, полный доступ к папке с программными файлами.  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Кто является Удостоверяющим центром при использовании сервиса 1С-Отчетности?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Удостоверяющим центром при использовании функционала «1С-Отчетность» является ЗАО «Калуга Астрал», а также его региональные представительства. В г. Москве и Подмосковном регионе услуги удостоверяющего центра от имени ЗАО «Калуга Астрал» оказывает компания ООО «Астрал-М».   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При запуске программы возникает сообщение “приложение уже запущено”</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Необходимо нажать комбинацию клавиш Ctrl+Alt+Delete для перехода к окну диспетчера задач. Во вкладке «Процессы» нужно выбрать процесс mercury.exe, после чего принудительно завершить его.    
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При входе в программу возникает сообщение «Ваша лицензия заканчивается…»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Это значит, что истекает срок действия лицензии на использование программного продукта «Астрал Отчет». Для ее продления необходимо связаться со специалистами ЗАО «Калуга Астрал» по телефону, указанному на официальном сайте компании. Еще одной причиной появления такого сообщения может быть неверная информация, размещенная в регистрационном файле.    
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">При запуске программы выходит ошибка «MissingMethodException:****» (Не найден метод*****)*</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для решения этой проблемы необходимо поменять в файле, размещенном по адресу C:\Program Files\Astral\AstralReport\AstralReportUpdate.xml, значения, указанные в тэге «version» на значение 3.4.0.0, после чего перезапустить программу.   
           </div>
         </li>
         <li class="accordion-item " data-accordion-item>
