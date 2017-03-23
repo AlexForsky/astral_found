@@ -22,7 +22,7 @@
               <ul class="nested vertical menu">
                 <li><a href="#work_ao">Работа с программой Астрал Отчет</a></li>
                 <li><a href="#pfr_ao">Ошибки ПФР</a></li>
-                <li><a href="#">Ошибки ФНС</a></li>
+                <li><a href="#fns_ao">Ошибки ФНС</a></li>
                 <li><a href="#">Ошибки SQL</a></li>
                 <li><a href="#">Ошибки VipNet CSP и КриптоПро</a></li>
               </ul>
@@ -185,7 +185,7 @@
             Для решения этой проблемы необходимо поменять в файле, размещенном по адресу C:\Program Files\Astral\AstralReport\AstralReportUpdate.xml, значения, указанные в тэге «version» на значение 3.4.0.0, после чего перезапустить программу.   
           </div>
         </li>
-        <li class="accordion-item " data-accordion-item>
+        <li class="accordion-item innvisible" data-accordion-item>
           <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
           <div class="accordion-content accordion-content_text" data-tab-content>
             Ответ   
@@ -290,13 +290,76 @@
             В этом случае необходимо обратиться за разъяснениями к инспектору ПФР, который занимался приемом документации и, по итогам ее рассмотрения, составил отрицательный протокол.  
           </div>
         </li>
-        <li class="accordion-item " data-accordion-item>
+        <li class="accordion-item innvisible" data-accordion-item>
           <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
           <div class="accordion-content accordion-content_text" data-tab-content>
             Ответ   
           </div>
         </li>
+        
+      
+      </ul>
+      <!--Конец блока Ошибки ПФР--> 
+
+      <!-- Блок ошибки ФНС --> 
+    <h3 class="main__right-title" id="fns_ao">Ошибки ФНС</h3>
+      <p class="main__right-subtitle">Ошибки ФНС, возникающие при формировании и сдаче соответствующей отчетности, можно решить, ознакомившись с информацией, размещенной в данном разделе каталога.</p>
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item " data-accordion-item is-active>
+          <a href="#" class="accordion-title accordion-title_fontsize">При создании отчета для ФНС либо запроса на выписку в ПО «Астрал-Отчет» выходит сообщение «….отсутствует в списке получателей»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Для решения проблемы необходимо: - убедиться в том, что необходимый контролирующий орган присутствует в списке получателей (это можно сделать, перейдя в меню «Файл», подменю «Регистрационная информация», после чего в открывшемся окне нужно выбрать вкладку «Получатели»); - если необходимый орган отсутствует в данном списке, нужно обратиться в клиентский отдел «Калуга Астрал» с заявлением о повторной регистрации получателя отчетности. Эта же ошибка может возникнуть в том случае, если с рабочего компьютера ранее отправлялся запрос на регистрацию сертификата, и эта процедура еще не была проведена контролирующим органом. Регистрация сертификата органом ИФНС осуществляется в течение суток с момента получения соответствующего заявления.   
+          </div>
+        </li>
         <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка ФНС: «Несоответствие ЭЦП подписи руководителя организации»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            В случае возникновения такой ошибки требуется произвести перерегистрацию сертификата электронной подписи в ИРУД. Данная процедура осуществляется в течение 24 часов.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка ФНС: «Не найден плательщик по ИНН/КПП»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Налогоплательщик не зарегистрирован в данной инспекции. Убедиться что отчетность отправляется в правильную налоговую. Если возможности отправить в необходимую налоговую отсутствует - созвонитесь с менеджером и добавьте необходимое направление сдачи отчетности   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">«Контейнер зашифрован для другого получателя»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            На компьютере отсутствует актуальный сертификат налоговой инспекции, необходимо сделать обновление программы.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка ФНС: «При испорте отчета возникает ошибка: Получатель 0000 отсутствует в списке получателей»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            При появлении такого сообщения пользователю необходимо обратиться в офис регистрации, где приобретался ПП "Астрал Отчет" для проверки подключенного направления ФНС, либо проверить код ИФНС, указанный в отчете, совпадает ли он с подключенным.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка ФНС: «Нарушение требований формирования транспортного контейнера (Идентификатор документооборота не уникален!) <ДопСв>Ошибка обработки:Идентификатор документооборота не уникален!» <ДопСв>Ошибка обработки: Идентификатор документооборота не уникален!»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Данная ошибка связана с техническим сбоем на сервере контролирующего органа. Она не оказывает влияния на процесс передачи отчетной документации, поэтому повторно пересылать транспортный контейнер не требуется.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Ошибка ФНС: «Несоответствие ЭЦП подписи руководителя организации - налогоплательщика (физического лица - налогоплательщика), уполномоченного представителя налогоплательщика»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Появление такого сообщения связано с тем, что в контролирующем органе зарегистрирован недействующий сертификат. Необходимо связаться с клиентским отделом компании «Калуга Астрал» для осуществления процедуры перерегистрации сертификата.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Отказ ФНС: «кодировка utf-8, для XML-документов допускается согласно формату только windows-1251»</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Возникновение данной проблемы может быть обусловлено следующими факторами: - Неверная кодировка, используемая при создании отчета. Для того чтобы узнать тип кодировки, нужно скопировать готовый электронный отчет в программу Блокнот и найти в документе строку xml version="1.0" encoding=" ". В том случае, если кодировка, указанная в ней, отличается от принятой контролирующими органами в качестве обязательной windows-1251, причина ошибки кроется именно в этом. Для решения проблемы необходимо обратиться к специалистам компании-разработчика используемого ПО; - Если кодировка соответствует требованиям контролирующего органа, стоит обратиться за разъяснениями к сотрудникам ИФНС.   
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Пришел отказ от налоговой: "Неверное имя файла".</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            При подготовке документации пользователем была внесена информация в графу «Код налогового органа – получателя отчетности», который должны заполнять только организации, являющиеся крупнейшими налогоплательщиками.  
+          </div>
+        </li>
+        <li class="accordion-item innvisible" data-accordion-item>
           <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
           <div class="accordion-content accordion-content_text" data-tab-content>
             Ответ   
@@ -304,8 +367,10 @@
         </li>
 
 
-        </ul>
-      <!--Конец блока Ошибки ПФР-->   
+
+      </ul>
+
+      <!--Конец блока ошибки ФНС  --> 
 
     </div>
     <!-- Конец правого блока -->
