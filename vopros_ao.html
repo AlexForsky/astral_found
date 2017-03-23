@@ -16,12 +16,12 @@
    <section class="main row">
    <!-- Левый блок - меню-->
      <div class="main__left small-12 large-3 columns" data-sticky-container>
-        <div class="sticky" data-sticky data-margin-top="6">
+        <div class="sticky" data-sticky data-margin-top="6"> <!--по уолчанию data-margin-top="0"-->
          <ul class="menu vertical">
             <li class="active"><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a>
               <ul class="nested vertical menu">
                 <li><a href="#work_ao">Работа с программой Астрал Отчет</a></li>
-                <li><a href="#">Ошибки ПФР</a></li>
+                <li><a href="#pfr_ao">Ошибки ПФР</a></li>
                 <li><a href="#">Ошибки ФНС</a></li>
                 <li><a href="#">Ошибки SQL</a></li>
                 <li><a href="#">Ошибки VipNet CSP и КриптоПро</a></li>
@@ -162,9 +162,9 @@
           </div>
         </li>
         <li class="accordion-item " data-accordion-item>
-          <a href="#" class="accordion-title accordion-title_fontsize">Кто является Удостоверяющим центром при использовании сервиса 1С-Отчетности?</a>
+          <a href="#" class="accordion-title accordion-title_fontsize">Кто является Удостоверяющим центром при использовании сервиса АстралОтчет?</a>
           <div class="accordion-content accordion-content_text" data-tab-content>
-            Удостоверяющим центром при использовании функционала «1С-Отчетность» является ЗАО «Калуга Астрал», а также его региональные представительства. В г. Москве и Подмосковном регионе услуги удостоверяющего центра от имени ЗАО «Калуга Астрал» оказывает компания ООО «Астрал-М».   
+            Удостоверяющим центром при использовании функционала АстралОтчет является ЗАО «Калуга Астрал», а также его региональные представительства. В г. Москве и Подмосковном регионе услуги удостоверяющего центра от имени ЗАО «Калуга Астрал» оказывает компания ООО «Астрал-М».   
           </div>
         </li>
         <li class="accordion-item " data-accordion-item>
@@ -195,6 +195,27 @@
       </ul>
       <!-- Конец блока Работа с программой-->
 
+
+      <!-- Блок ошибки ПФР-->
+    <h3 class="main__right-title" id="pfr_ao">Ошибки ПФР</h3>
+      <p class="main__right-subtitle">Наиболее часто возникающие при работе ошибки ПФР-отчетности собраны в данной категории каталога. Здесь же можно найти информацию о решении проблем, возникающих при использовании в работе сертификата ПФР.</p>
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item " data-accordion-item is-active>
+          <a href="#" class="accordion-title accordion-title_fontsize">В течение какого времени с момента отправки файла отчетности в ПФР приходят подтверждение оператора, квитанция, протокол?</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Спецоператор, обеспечивающий передачу документации в ПФР, не присылает подтверждения их статуса. Квитанция об отправке передается пользователю в течение двух суток с момента передачи документов, протокол – в течение четырех суток. Перенаправление квитанции на протокол осуществляется после нажатия пользователем кнопки «Мастер связи».  
+          </div>
+        </li>
+        <li class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Ответ   
+          </div>
+        </li>
+
+
+        </ul>
+      <!--Конец блока Ошибки ПФР-->   
 
     </div>
     <!-- Конец правого блока -->
