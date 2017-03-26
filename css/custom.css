@@ -41,16 +41,8 @@
   padding: 7px;
 }
 
-.tarif__top {
- 
-}
-
-.tarif__name {
-  
-  
-}
-
-.tarif__prise {
-  
+.prise_font {
+  color: #4586C1;
+  font-size: 28px;
 }
 
