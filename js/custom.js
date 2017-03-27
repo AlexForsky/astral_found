@@ -15,3 +15,10 @@ $('.menu_opt').find('li.opt').click(function() {
   $('.data-price-opt_text').text(prise);
   $('.data-price-opt_text_dop').text(priseDop);
 })
+
+$('.menu_group').find('li.group').click(function() {
+  $('.menu_group .active').removeClass('active');
+  $(this).addClass('active');
+  var prise = $(this).data('prise-group');
+  $('.data-price-group_text').text(prise);
+ })
