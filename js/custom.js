@@ -23,15 +23,3 @@ $('.menu_group').find('li.group').click(function() {
   $('.data-price-group_text').text(prise);
  })
 
-
-//смена класса меню при изменении размера окна
-function windowSize(){
-    if ($(window).width() <= '1005'){
-        $('#menuSticky').removeClass('sticky');
-    } else {
-        $('#menuSticky').addClass('sticky');
-    }
-}
-
-$(window).load(windowSize); // при загрузке
-$(window).resize(windowSize); // при изменении размеров 
