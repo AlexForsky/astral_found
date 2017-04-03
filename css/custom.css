@@ -29,6 +29,7 @@
 /* tarif_ao.html  */
 .tarif_annotation {
   color: #797878;
+  font-size: 16px;
 }
 
 .tarif__mo__baz, .tarif__mo__opt, .tarif__mo__group {
