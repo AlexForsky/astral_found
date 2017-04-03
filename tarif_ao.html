@@ -20,10 +20,10 @@
          <ul class="menu vertical">
             <li ><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a></li>
             <li class="active"><a href="tarif_ao.html">Тарифы</a>
-              <ul class="nested vertical menu">
-                <li><a href="#tarif_mo">Московская область</a></li>
-                <li><a href="#tarif_m">Москва</a></li>
-                <li><a href="tarif_ao_tver.html">Тверь и Тверская область</a></li>
+              <ul class="nested vertical menu tarif__menu">
+                <li class="tarif__menu-item"><a href="#tarif_mo">Московская область</a></li>
+                <li class="tarif__menu-item"><a href="#tarif_m">Москва</a></li>
+                <li class="tarif__menu-item"><a href="#tarif_t">Тверь и Тверская область</a></li>
               </ul>
             </li>
             <li><a href="vopros_1co.html">1С-Отчетность - вопросы и ответы</a></li>
@@ -39,9 +39,13 @@
      <br>
      <!--Конец блока Общий  --> 
 
-     <!-- Тариф Московская область -->
-      <h4 id="tarif_mo" class="tarif__title__region">Тарифы, действющие на территории Московской области</h4>
-      <div class="tarif__mo__baz ">
+     <ul class="accordion" data-accordion>
+        <!-- Тариф Московская область -->
+        <li id="tarif_mo" class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Тарифы, действющие на территории Московской области</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            
+            <div class="tarif__mo__baz ">
         
           <div class="tarif__name">
             <h3 >Тариф «Базовый» <span class="tarif_annotation">(Московская область)</span></h3>
@@ -130,13 +134,17 @@
             <p><span class="prise_font data-price-group_text">3050</span> рублей в год - за каждую организацию</p>
             
           </div> 
-      </div>
+      </div>      
+          </div>
+        </li>
+		<!-- Конец тарифа Московская область -->
 
-     <!-- Конец тарифа Московская область -->
-	<hr><hr>
-     <!-- Тариф Москва -->
-		<h4 id="tarif_m" class="tarif__title__region">Тарифы, действющие на территории г. Москва</h4>
-      <div class="tarif__mo__baz ">
+        <!-- Тариф Москва -->
+        <li id="tarif_m" class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Тарифы, действющие на территории г. Москва</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+           <!-- Ответ   -->
+           	<div class="tarif__mo__baz ">
         
           <div class="tarif__name">
             <h3 >Тариф «Базовый» <span class="tarif_annotation">(Москва)</span></h3>
@@ -226,9 +234,15 @@
             
           </div> 
       </div>
-
-
-     <!-- Конец тарифа Москва -->
+          </div>
+        </li>
+        <!-- Конец тарифа Москва -->
+        <li id="tarif_t" class="accordion-item " data-accordion-item>
+          <a href="#" class="accordion-title accordion-title_fontsize">Вопрос</a>
+          <div class="accordion-content accordion-content_text" data-tab-content>
+            Ответ   
+          </div>
+        </li>
     </div>
     <!-- Конец правого блока -->
    </section>

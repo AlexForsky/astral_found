@@ -55,3 +55,10 @@ $('.menu_group_m').find('li.group_m').click(function() {
   $('.data-price-group_m_text').text(prise);
  })
 
+
+//обработчик меню тарифов
+$('.tarif__menu').find('li.tarif__menu-item').click(function() {
+  $('.accordion-item .is-active').removeClass('is-active');
+  
+ })
+
