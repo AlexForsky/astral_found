@@ -41,6 +41,18 @@
 
      <!-- Тариф Московская область -->
     <h4>Тарифы, действющие на территории Московской области</h4>
+    <!-- Навигация по вкладкам -->
+    <ul class="tabs" data-tabs id="tarif_mo-tabs">
+      <li class="tabs-title is-active"><a class="navtabs__name" href="#base_mo" aria-selected="true">Базовый</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#opt_mo">Оптимальный</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#group_mo">Группа компаний</a></li>
+    </ul>
+    <!--Конец навигация по вкладкам -->
+
+    <div class="tabs-content" data-tabs-content="tarif_mo-tabs">
+
+    <!-- Вкладка Базовый -->
+    <div class="tabs-panel is-active" id="base_mo">
     <div class="tarif__mo__baz ">
         <div class="tarif__name">
             <h3 >Тариф «Базовый» <span class="tarif_annotation">(Московская область)</span></h3>
@@ -67,7 +79,11 @@
             <p><span class="prise_font data-price-baz_text_dop">5700</span> рублей в год - дополнительный абонент</p>
           </div> 
       </div>
+      </div>
+      <!--Конец вкладка базовый -->
 
+      <!--Вкладка оптимальный -->
+      <div class="tabs-panel" id="opt_mo">
       <div class="tarif__mo__opt ">
         
           <div class="tarif__name">
@@ -96,8 +112,11 @@
             <p><span class="prise_font data-price-opt_text_dop">8000</span> рублей в год - дополнительный абонент</p>
           </div> 
       </div>
+      </div>
+      <!--Конец вкладка оптимальный -->
 
-
+      <!--Вкладка группа компаний  -->
+      <div class="tabs-panel" id="group_mo">
       <div class="tarif__mo__group ">
         
           <div class="tarif__name">
@@ -129,8 +148,10 @@
             <p><span class="prise_font data-price-group_text">3050</span> рублей в год - за каждую организацию</p>
             
           </div> 
-      </div>      
-          
+      </div>
+      </div>
+      <!-- Конец вкладка группа компаний -->      
+     </div>     
         
 		<!-- Конец тарифа Московская область -->
 
