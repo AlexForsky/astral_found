@@ -54,5 +54,9 @@
 
 .navtabs__name {
   font-weight: bold;
+  
 }
 
+a.navtabs__name {
+	font-size: 0.9rem;
+}
