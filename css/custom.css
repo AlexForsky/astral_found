@@ -53,10 +53,15 @@
 }
 
 .navtabs__name {
-  font-weight: bold;
+ font-weight: 600;
   
 }
 
 a.navtabs__name {
 	font-size: 0.9rem;
+}
+
+.tabs-panel__custom {
+	padding-left: 3px;
+	padding-right: 3px;
 }
