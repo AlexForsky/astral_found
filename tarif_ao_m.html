@@ -42,6 +42,18 @@
 
         <!-- Тариф Москва -->
         <h4>Тарифы, действющие на территории г. Москва</h4>
+        <!-- Навигация по вкладкам -->
+        <ul class="tabs" data-tabs id="tarif_mo-tabs">
+          <li class="tabs-title is-active"><a class="navtabs__name" href="#base_mo" aria-selected="true">Базовый</a></li>
+          <li class="tabs-title"><a class="navtabs__name" href="#opt_mo">Оптимальный</a></li>
+          <li class="tabs-title"><a class="navtabs__name" href="#group_mo">Группа компаний</a></li>
+        </ul>
+        <!--Конец навигация по вкладкам -->
+
+        <div class="tabs-content" data-tabs-content="tarif_mo-tabs">
+
+        <!-- Вкладка Базовый -->
+        <div class="tabs-panel is-active tabs-panel__custom" id="base_mo">
         <div class="tarif__mo__baz ">
         
           <div class="tarif__name">
@@ -69,7 +81,11 @@
             <p><span class="prise_font data-price-baz_text_dop">5700</span> рублей в год - дополнительный абонент</p>
           </div> 
       </div>
+      </div>
+      <!--Конец вкладка базовый -->
 
+      <!--Вкладка оптимальный -->
+      <div class="tabs-panel tabs-panel__custom" id="opt_mo">
       <div class="tarif__mo__opt ">
         
           <div class="tarif__name">
@@ -98,7 +114,11 @@
             <p><span class="prise_font data-price-opt_text_dop">9500</span> рублей в год - дополнительный абонент</p>
           </div> 
       </div>
+      </div>
+      <!--Конец вкладка оптимальный -->
 
+      <!--Вкладка группа компаний  -->
+      <div class="tabs-panel tabs-panel__custom" id="group_mo">
 
       <div class="tarif__mo__group ">
         
@@ -132,9 +152,10 @@
             
           </div> 
       </div>
-          
+      </div>
+      <!-- Конец вкладка группа компаний -->   
         <!-- Конец тарифа Москва -->
-        
+      </div> 
     
     <!-- Конец правого блока -->
    </section>
