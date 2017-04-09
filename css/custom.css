@@ -65,3 +65,11 @@ a.navtabs__name {
 	padding-left: 3px;
 	padding-right: 3px;
 }
+
+@media screen and (max-width: 600px) {
+  .menu > li > a.group__name {
+    padding: 0.2rem;
+    font-size: 12px;
+  }
+
+}
