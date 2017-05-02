@@ -76,6 +76,37 @@ a.navtabs__name {
   padding: 15px 0;
 }
 
+
+/* Навигационное меню в шапке */
+/* Пункты меню */
+.header__nav-item {
+  border: 2px solid #4586C1;
+  border-radius: 7px;
+  background-color: white;
+  font-size: 1.2rem;
+}
+
+.header__nav-item:hover {
+  background-color: #98BBE4;
+}
+
+.header__nav-menu {
+  margin: 0 auto;
+}
+
+.header__nav-submenu {
+  border: 1px solid #4586C1;
+  border-radius: 0 0 5px 5px;
+}
+
+.header__nav-submenu_item {
+  font-size: 1rem;
+}
+
+.header__nav-submenu_item:hover {
+  background-color: #98BBE4;
+}
+
 @media screen and (max-width: 600px) {
   .menu > li > a.group__name {
     padding: 0.2rem;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>АстралСофт</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
@@ -12,78 +12,24 @@
   </head>
   <body>
    
-   <ul class="accordion" data-accordion data-allow-all-closed="true">
-      <li class="accordion-item " data-accordion-item is-active>
-        <a href="#" class="accordion-title">Accordion 1</a>
-        <div class="accordion-content" data-tab-content>
-          I would start in the open state, due to using the `is-active` state class.
-        </div>
-      </li>
-      <li class="accordion-item " data-accordion-item>
-        <a href="#" class="accordion-title">Accordion 1</a>
-        <div class="accordion-content" data-tab-content>
-          I would start in the open state, due to using the `is-active` state class.
-        </div>
-      </li>
-      <li class="accordion-item " data-accordion-item>
-        <a href="#" class="accordion-title">Accordion 1</a>
-        <div class="accordion-content" data-tab-content>
-          I would start in the open state, due to using the `is-active` state class.
-        </div>
-      </li>
-      <!-- ... -->
-    </ul>
-    <a href="vopros_ao.html">вопросы и ответы</a>
-
-    <div class="row">
-      <div class="large-9 columns">
-        <h3>Тариф «Базовый»</h3>
-        <p>Сдача отчетности в ДВА любых контролирующих органа по выбору (ФНС, ПФР, ФСС, РОССТАТ)</p>
-      </div>
-      <div class="large-3 columns">
-        <p><span class="data-price-baz_text">6300</span> рублей/год</p>
-        <p>Цена тарифа с учетом формы и налообложения</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-9 columns">
-        <h4>Выбрать налоговой режим</h4>
-        <ul class="menu menu_baz">
-          <li class="active baz" data-prise-baz="6300"><a >ОСНО</a></li>
-          <li class="baz" data-prise-baz="3900"><a>УСНО</a></li>
-          <li class="baz" data-prise-baz="3000"><a>Бюджет</a></li>
-          <li class="baz" data-prise-baz="2900"><a>ИП</a></li>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="dropdown row menu header__nav-menu" data-dropdown-menu>
+          <li class="header__nav-item large-3 columns">
+            <a href="#">Продукты</a>
+            <ul class="menu header__nav-submenu">
+              <li class="header__nav-submenu_item"><a href="#">АстралОтчет</a></li>
+              <li class="header__nav-submenu_item"><a href="#">1с-Отчетность</a></li>
+              <li class="header__nav-submenu_item"><a href="#">Item 1A</a></li>
+              <!-- ... -->
+            </ul>
+          </li>
+          <li class="header__nav-item large-3 columns"><a href="#">Новости</a></li>
+          <li class="header__nav-item large-3 columns"><a href="#">Статьи</a></li>
+          <li class="header__nav-item large-3 columns"><a href="#">Контакты</a></li>
         </ul>
-       </div> 
-      <div class="large-3 columns">
-        
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-9 columns">
-        <h3>Тариф «Базовый»</h3>
-        <p>Сдача отчетности в ДВА любых контролирующих органа по выбору (ФНС, ПФР, ФСС, РОССТАТ)</p>
-      </div>
-      <div class="large-3 columns">
-        <p><span class="data-price-text">6300</span> рублей/год</p>
-        <p>Цена тарифа с учетом формы и налообложения</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-9 columns">
-        <h4>Выбрать налоговой режим</h4>
-        <ul class="menu menu_opt">
-          <li class="active" data-prise="6300"><a >ОСНО</a></li>
-          <li data-prise="3900"><a>УСНО</a></li>
-          <li data-prise="3000"><a>Бюджет</a></li>
-          <li data-prise="2900"><a>ИП</a></li>
-        </ul>
-       </div> 
-      <div class="large-3 columns">
-        
-      </div>
-    </div>
+      </nav>
+    </header>
     
     <footer class="footer"><em>ООО "АстралСофт" &copy 2011-2017</em></footer>
     <script src="js/vendor/jquery.js"></script>
