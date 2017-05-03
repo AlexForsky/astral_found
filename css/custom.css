@@ -107,10 +107,42 @@ a.navtabs__name {
   background-color: #98BBE4;
 }
 
-@media screen and (max-width: 600px) {
+.header__nav-min {
+  display: none;
+  min-height: 40px;
+  border: 2px solid #4586C1;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.header__nav-min:hover .header__nav-menu__min{
+  display: block; 
+}
+
+.header__nav-min__text {
+  text-align: right;
+  color: #4586C1;
+  padding-right: 35px;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header__nav-menu__min {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
   .menu > li > a.group__name {
     padding: 0.2rem;
     font-size: 12px;
+  }
+
+  .header__nav-min {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
   }
 
 }
