@@ -115,6 +115,10 @@ a.navtabs__name {
   background-color: white;
 }
 
+.header__nav-min:hover {
+  background-color: #98BBE4;
+}
+
 .header__nav-min:hover .header__nav-menu__min{
   display: block; 
 }
