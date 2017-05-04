@@ -11,46 +11,57 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
   </head>
   <body>
-   
-    <header class="header">
-      <nav class="header__nav-min">
-      <p class="header__nav-min__text"><i class="fi-list"></i></p>
-      
-        <ul class="dropdown menu vertical header__nav-menu header__nav-menu__min" data-dropdown-menu>
-          <li class="header__nav-item">
-            <a href="#">Продукты</a>
-            <ul class="menu header__nav-submenu">
-              <li class="header__nav-submenu_item"><a href="#">АстралОтчет</a></li>
-              <li class="header__nav-submenu_item"><a href="#">1С-Отчетность</a></li>
-              <li class="header__nav-submenu_item"><a href="#">Item 1A</a></li>
-              
-            </ul>
-          </li>
-          <li class="header__nav-item"><a href="#">Новости</a></li>
-          <li class="header__nav-item"><a href="#">Статьи</a></li>
-          <li class="header__nav-item"><a href="#">Контакты</a></li>
-        </ul>
-        
-      </nav>
 
-      <nav class="header__nav">
-        <ul class="dropdown row menu header__nav-menu" data-dropdown-menu>
-          <li class="header__nav-item large-3 medium-3 columns">
-            <a href="#">Продукты</a>
-            <ul class="menu header__nav-submenu">
-              <li class="header__nav-submenu_item"><a href="#">АстралОтчет</a></li>
-              <li class="header__nav-submenu_item"><a href="#">1С-Отчетность</a></li>
-              <li class="header__nav-submenu_item"><a href="#">Item 1A</a></li>
-              <!-- ... -->
-            </ul>
-          </li>
-          <li class="header__nav-item large-3 medium-3 columns"><a href="#">Новости</a></li>
-          <li class="header__nav-item large-3 medium-3 columns"><a href="#">Статьи</a></li>
-          <li class="header__nav-item large-3 medium-3 columns"><a href="#"><!--<i class="fi-map"></i>-->Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-    
+    <header>
+      <div class="title-bar index__header__nav-min">
+        <div class="title-bar-left">
+          <span class="title-bar-title">АстралСофт</span>
+        </div>
+        <div class="title-bar-right">
+          <button class="menu-icon header__menu-icon" type="button"></button>
+        </div>
+      </div>
+          <ul class="dropdown menu vertical index__header__menu-min" data-dropdown-menu>
+            <li><a href="#0" class="index__header__menu-min-link">Продукты</a>
+              <ul class="menu">
+                <li><a href="#" class="index__header__menu-min-sublink">АстралОтчет</a></li>
+                <li><a href="#" class="index__header__menu-min-sublink">1С-Отчетность</a></li>
+                <li><a href="#" class="index__header__menu-min-sublink">Что-то еще</a></li>
+                <li><a href="#" class="index__header__menu-min-sublink">И еще что-то еще</a></li>
+              </ul>
+
+            </li>
+            <li><a href="#0" class="index__header__menu-min-link">Новости</a></li>
+            <li><a href="#0" class="index__header__menu-min-link">Статьи</a></li>
+            <li><a href="#0" class="index__header__menu-min-link">Контакты</a></li>
+          </ul>
+
+      <div class="title-bar index__header__nav">
+        <div class="title-bar-left">
+          <span class="title-bar-title header__title">АстралСофт</span>
+        </div>
+        <div class="title-bar-right">
+          <ul class="dropdown menu index__header__menu" data-dropdown-menu>
+            <li><a href="#0" class="index__header__menu-link">Продукты</a>
+              <ul class="menu">
+                <li><a href="#" class="index__header__menu-sublink">АстралОтчет</a></li>
+                <li><a href="#" class="index__header__menu-sublink">1С-Отчетность</a></li>
+                <li><a href="#" class="index__header__menu-sublink">Что-то еще</a></li>
+                <li><a href="#" class="index__header__menu-sublink">И еще что-то еще</a></li>
+              </ul>
+
+            </li>
+            <li><a href="#0" class="index__header__menu-link">Новости</a></li>
+            <li><a href="#0" class="index__header__menu-link">Статьи</a></li>
+            <li><a href="#0" class="index__header__menu-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+
+      
+          </header>
+
+
     <footer class="footer"><em>ООО "АстралСофт" &copy 2011-2017</em></footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

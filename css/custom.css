@@ -79,77 +79,64 @@ a.navtabs__name {
 
 /* Навигационное меню в шапке */
 /* Пункты меню */
+.index__header__nav-min {
+  background-color: #1779BA;
+  padding: 10px 20px;
+  display: none;
+}
 
+.index__header__nav {
+  background-color: #1779BA;
+  padding: 10px 25px;
+}
 
-.header__nav-item {
-  border: 2px solid #4586C1;
-  border-radius: 7px;
-  background-color: white;
+.index__header__menu-link {
+  color: white;
   font-size: 1.2rem;
-  
 }
 
-.header__nav-item:hover {
-  background-color: #98BBE4;
+.index__header__menu-sublink {
+  color: #1779BA;
+  text-align: left;
 }
 
-.header__nav-menu {
-  margin: 0 auto;
+.index__header__menu-sublink:hover {
+  color: white;
+  background-color: #1779BA;
 }
 
-.header__nav-submenu {
-  border: 1px solid #4586C1;
-  border-radius: 0 0 5px 5px;
+.header__title {
+  font-size: 1.5rem;
 }
 
-.header__nav-submenu_item {
-  font-size: 1rem;
-}
-
-.header__nav-submenu_item:hover {
-  background-color: #98BBE4;
-}
-
-.header__nav-min {
+.index__header__menu-min {
   display: none;
-  min-height: 40px;
-  border: 2px solid #4586C1;
-  border-radius: 7px;
-  background-color: white;
+  z-index: 10;
 }
 
-.header__nav-min:hover {
-  background-color: #98BBE4;
+.index__header__menu-min-sublink {
+
 }
 
-.header__nav-min:hover .header__nav-menu__min{
-  display: block; 
+.header__menu-icon:hover .index__header__menu-min {
+  display: inline-block;
 }
 
-.header__nav-min__text {
-  text-align: right;
-  color: #4586C1;
-  padding-right: 35px;
-  font-size: 3rem;
-  margin: 0;
-}
 
-.header__nav-menu__min {
-  display: none;
-}
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
   .menu > li > a.group__name {
     padding: 0.2rem;
     font-size: 12px;
   }
 
-  .header__nav-min {
+  .index__header__nav-min {
     display: block;
   }
 
-  .header__nav {
+  .index__header__nav {
     display: none;
   }
+  
 
 }
