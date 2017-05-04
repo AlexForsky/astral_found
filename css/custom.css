@@ -81,8 +81,9 @@ a.navtabs__name {
 /* Пункты меню */
 .index__header__nav-min {
   background-color: #1779BA;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: none;
+  min-height: 43px;
 }
 
 .index__header__nav {
@@ -105,22 +106,45 @@ a.navtabs__name {
   background-color: #1779BA;
 }
 
+.index__header__menu-min-link:hover {
+  color: white;
+  background-color: #1779BA;
+}
+
 .header__title {
   font-size: 1.5rem;
+  color: white;
+
+}
+
+.header__icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.header__right, .heder__left {
+  position: relative;
+}
+
+.header__right {
+  float: right;
+}
+
+.header__left {
+  float: left;
 }
 
 .index__header__menu-min {
   display: none;
   z-index: 10;
+  position: relative;
 }
 
-.index__header__menu-min-sublink {
 
-}
 
-.header__menu-icon:hover .index__header__menu-min {
-  display: inline-block;
-}
+
+
+
 
 
 
@@ -138,5 +162,7 @@ a.navtabs__name {
     display: none;
   }
   
-
+  .index__header__menu-min {
+    display: block;
+  }
 }
