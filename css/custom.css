@@ -78,69 +78,27 @@ a.navtabs__name {
 
 
 /* Навигационное меню в шапке */
+/*Title Bar  */
+.header__nav-min {
+  background-color: #1779BA;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 /* Пункты меню */
-.index__header__nav-min {
-  background-color: #1779BA;
-  padding: 5px 20px;
+.header__title-link {
+  color: white;
+}
+.header__menu-min {
   display: none;
-  min-height: 43px;
-}
-
-.index__header__nav {
-  background-color: #1779BA;
-  padding: 10px 25px;
-}
-
-.index__header__menu-link {
+  
   color: white;
-  font-size: 1.2rem;
 }
 
-.index__header__menu-sublink {
-  color: #1779BA;
-  text-align: left;
+.header__nav-min:hover + .header__menu-min {
+  display: block;
 }
-
-.index__header__menu-sublink:hover {
-  color: white;
-  background-color: #1779BA;
-}
-
-.index__header__menu-min-link:hover {
-  color: white;
-  background-color: #1779BA;
-}
-
-.header__title {
-  font-size: 1.5rem;
-  color: white;
-
-}
-
-.header__icon {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.header__right, .heder__left {
-  position: relative;
-}
-
-.header__right {
-  float: right;
-}
-
-.header__left {
-  float: left;
-}
-
-.index__header__menu-min {
-  display: none;
-  z-index: 10;
-  position: relative;
-}
-
-
 
 
 
@@ -154,15 +112,5 @@ a.navtabs__name {
     font-size: 12px;
   }
 
-  .index__header__nav-min {
-    display: block;
-  }
-
-  .index__header__nav {
-    display: none;
-  }
   
-  .index__header__menu-min {
-    display: block;
-  }
 }
