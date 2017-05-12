@@ -79,27 +79,55 @@ a.navtabs__name {
 
 /* Навигационное меню в шапке */
 /*Title Bar  */
-.header__nav-min {
+.header__min {
   background-color: #1779BA;
   color: white;
   padding-right: 20px;
   padding-left: 20px;
 }
+ .header__min-right {
+  text-align: center;
+ }
 
+ .header__min-list {
+  font-size: 1.3rem;
+ }
 /* Пункты меню */
-.header__title-link {
-  color: white;
-}
-.header__menu-min {
-  display: none;
-  
-  color: white;
+
+.header__min-menu, .header__min-submenu {
+  list-style: none;
 }
 
-.header__nav-min:hover + .header__menu-min {
+.header__min-menu {
+  position: relative;
+}
+
+.header__min-submenu {
+  color: #1779BA;
+  text-align: left;
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 100px;
+  display: none;
+  background-color: white;
+  min-width: 100%;
+  border-left: 2px solid #1779BA;
+  border-radius: 0 0 0 7px;
+}
+
+.header__min-submenu__item {
+  border-radius: 0 0 0 7px;
+  border-bottom: 1px solid #1779BA;
+}
+
+.header__min-submenu__item a {
+  padding-left: 10px;
+}
+
+.header__min-menu__item:hover > ul {
   display: block;
 }
-
 
 
 
