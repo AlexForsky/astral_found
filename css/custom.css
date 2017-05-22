@@ -145,7 +145,7 @@ a.navtabs__name {
 
 .header__max__title-link {
   color: #ffffff;
-  
+
 }
 
 .header__max__item {
@@ -155,6 +155,7 @@ a.navtabs__name {
 
 .header__max__item-link {
   color: white;
+  border-radius: 3px;
 }
 
 .header__max__item-link:hover {
