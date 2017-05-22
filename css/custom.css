@@ -143,6 +143,11 @@ a.navtabs__name {
   
 }
 
+.header__max__title-link {
+  color: #ffffff;
+  
+}
+
 .header__max__item {
   background-color: #1779BA;
   color: white;
@@ -179,6 +184,11 @@ a.navtabs__name {
 
 .header__max__submenu-link:hover {
   color: #ffffff;
+}
+
+.header__max__search {
+  margin-top: 0.7rem;
+  background-color: #1779BA;
 }
 
 .header__max__input {
