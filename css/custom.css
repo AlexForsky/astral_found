@@ -117,11 +117,11 @@ a.navtabs__name {
   background-color: white;
   min-width: 250px;
   border-left: 2px solid #1779BA;
-  border-radius: 0 0 0 7px;
+  border-radius: 0 0 0 3px;
 }
 
 .header__min-submenu__item {
-  border-radius: 0 0 0 7px;
+  border-radius: 0 0 0 3px;
   border-bottom: 1px solid #1779BA;
 }
 
