@@ -78,7 +78,7 @@ a.navtabs__name {
 
 
 /* Навигационное меню в шапке */
-/*Title Bar  */
+/* Для маленьких разрешений*/
 .header__min {
   background-color: #1779BA;
   color: white;
@@ -134,9 +134,52 @@ a.navtabs__name {
 }
 
 
+/* Для больших разрешений*/
+.header__max {
+  background-color: #1779BA;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+}
 
+.header__max__item {
+  background-color: #1779BA;
+  color: white;
+}
 
+.header__max__item-link {
+  color: white;
+}
 
+.header__max__item-link:hover {
+  background-color: white;
+}
+
+.menu-text {
+  font-size: 1.4rem;
+  padding-right: 70px;
+}
+
+.header__max-submenu {
+  border: none;
+}
+.header__max__submenu-item {
+  background-color: #ffffff;
+  border-left: 2px solid #1779BA;
+  border-bottom: 1px solid #1779BA;
+  border-right: 1px solid #1779BA;
+  border-radius: 3px;
+}
+
+.header__max__submenu-item:hover {
+  background-color: #1779BA;
+  
+}
+
+.header__max__submenu-link:hover {
+  color: #ffffff;
+}
 
 @media screen and (max-width: 650px) {
   .menu > li > a.group__name {
@@ -146,5 +189,9 @@ a.navtabs__name {
 
   .header__min {
     display: flex;
+  }
+
+  .header__max {
+    display: none;
   }
 }
