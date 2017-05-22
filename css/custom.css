@@ -181,6 +181,14 @@ a.navtabs__name {
   color: #ffffff;
 }
 
+.header__max__input {
+  background-color: #1779BA;
+}
+
+.header__max__button {
+  border-color: #ffffff;
+}
+
 @media screen and (max-width: 650px) {
   .menu > li > a.group__name {
     padding: 0.2rem;
