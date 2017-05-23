@@ -200,6 +200,12 @@ a.navtabs__name {
   border-color: #ffffff;
 }
 
+.orbit__box {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
 @media screen and (max-width: 650px) {
   .menu > li > a.group__name {
     padding: 0.2rem;
