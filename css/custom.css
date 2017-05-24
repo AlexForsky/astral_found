@@ -72,7 +72,7 @@ a.navtabs__name {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  background-color: #F5F3F3;
+  background-color: #1779BA;
   padding: 15px 0;
 }
 
@@ -200,11 +200,48 @@ a.navtabs__name {
   border-color: #ffffff;
 }
 
+
+/*   ORBIT  BOX  */
+.karusel {
+  background-color: #e8f5ff;
+  min-height: 300px;
+}
+
 .orbit__box {
   margin: 0 auto;
-  max-width: 1000px;
+  
   text-align: center;
+  
 }
+
+.orbit__box-slide {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.orbit__box-slide__right {
+  padding: 10px;
+}
+
+.orbit__box-slide__left {
+  padding: 10px;
+  text-align: left;
+  max-width: 350px;
+}
+
+.slider__text {
+  color: grey;
+  font-style: italic;
+  text-align: justify;
+}
+
+.slider__button {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px grey;
+}
+
 
 @media screen and (max-width: 650px) {
   .menu > li > a.group__name {
