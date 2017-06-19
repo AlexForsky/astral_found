@@ -1,6 +1,7 @@
 .header {
   min-height: 85px;
   background-color: #F5F3F3;
+  box-shadow: 0 2px 2px grey;
 }
  .header {
  	margin-bottom: 20px;
@@ -74,6 +75,7 @@ a.navtabs__name {
   font-weight: bold;
   background-color: #1779BA;
   padding: 15px 0;
+  box-shadow: 0 -2px 3px grey;
 }
 
 
@@ -239,7 +241,11 @@ a.navtabs__name {
 
 .slider__button {
   border-radius: 5px;
-  box-shadow: 3px 3px 10px grey;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.slider__button:hover {
+  box-shadow: 5px 5px 12px grey;
 }
 
 
