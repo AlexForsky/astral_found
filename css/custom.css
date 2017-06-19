@@ -1,11 +1,10 @@
 .header {
   min-height: 85px;
-  background-color: #F5F3F3;
-  box-shadow: 0 2px 2px grey;
+  background-color: #1779BA;
+  box-shadow: 0 2px 3px grey;
+  margin-bottom: 20px;
 }
- .header {
- 	margin-bottom: 20px;
- }
+ 
 
 /* Увеличение размера шрифта в заголовках аккордеона*/
 .accordion-title_fontsize {
@@ -76,6 +75,7 @@ a.navtabs__name {
   background-color: #1779BA;
   padding: 15px 0;
   box-shadow: 0 -2px 3px grey;
+  margin-top: 3px;
 }
 
 
