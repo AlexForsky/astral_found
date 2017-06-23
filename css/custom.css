@@ -203,6 +203,8 @@ a.navtabs__name {
 }
 
 
+
+
 /*   ORBIT  BOX  */
 .karusel {
   background-color: #e8f5ff;
@@ -284,4 +286,5 @@ a.navtabs__name {
   .header__max {
     display: none;
   }
+
 }
