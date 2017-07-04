@@ -277,6 +277,10 @@ a.navtabs__name {
   box-shadow: 5px 5px 12px grey;
 }
 
+.advantages {
+  padding: 0 1rem;
+}
+
 .advantages__item {
   display: flex;
   justify-content: space-between;
