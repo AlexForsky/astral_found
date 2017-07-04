@@ -50,6 +50,12 @@
   font-weight: bold;
 }
 
+.prise_font20 {
+  color: #1779ba;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .active_menu {
 	font-weight: bold;
 }
@@ -72,6 +78,20 @@ a.navtabs__name {
   margin-bottom: 0.5rem;
 }
 
+.tarif__exp, .notabene {
+  padding-left: 1rem;
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.25rem;
+  
+  padding: 7px;
+  margin-right: 3px;
+  margin-left: 3px;
+
+}
+
 .footer {
   text-align: center;
   font-size: 14px;
@@ -81,7 +101,10 @@ a.navtabs__name {
   box-shadow: 0 -2px 3px grey;
   margin-top: 3px;
 }
-
+ .footer a {
+  text-decoration: none;
+  color: inherit;
+ }
 
 /* Навигационное меню в шапке */
 /* Для маленьких разрешений*/
