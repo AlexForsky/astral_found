@@ -317,6 +317,9 @@ a.navtabs__name {
   margin: 0;
 }
 
+.font-bold {
+  font-weight: bold;
+}
 
 @media screen and (max-width: 650px) {
   .menu > li > a.group__name {
