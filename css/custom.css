@@ -3,6 +3,12 @@
   background-color: #1779BA;
   box-shadow: 0 2px 3px grey;
   margin-bottom: 20px;
+  padding-right: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
  
 
@@ -229,7 +235,15 @@ a.navtabs__name {
   border-color: #ffffff;
 }
 
+.header__title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
+.header__right {
+  color: #fff;
+}
 
 
 /*   ORBIT  BOX  */
