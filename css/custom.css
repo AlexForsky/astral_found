@@ -338,16 +338,22 @@ a.navtabs__name {
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-
+  border-radius: 5px;
 }
 
 .allmain__item-title {
   color: #1779BA;
   opacity: 1;
-  transition: opacity 10s ease-in-out 1s;
+  transition: opacity 1s ease-in-out 0.1s;
 }
 
-.allmain__item:hover img {
+.allmain__item-img {
+  margin-bottom: 1rem;
+  opacity: 1;
+  transition: opacity 1s ease-in-out 0.1s;
+}
+
+.allmain__item:hover .allmain__item-img {
   opacity: 0.2;
 }
 
@@ -355,9 +361,7 @@ a.navtabs__name {
   opacity: 0.2;
 }
 
-.allmain__item-img {
-  margin-bottom: 1rem;
-}
+
 
 .allmain__item-link {
   opacity: 0;
@@ -367,8 +371,9 @@ a.navtabs__name {
   font-weight: bold;
   font-size: 1.5rem;
   
-  transition: opacity 10s ease-in-out 10s;
+  transition: opacity 2s ease-in-out 1s;
 }
+
 
 .allmain__item:hover .allmain__item-link {
   display: block;
