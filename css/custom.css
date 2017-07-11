@@ -320,17 +320,19 @@ a.navtabs__name {
 
 .allmain {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   padding: 0.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .allmain__item {
   min-width: 300px;
   min-height: 200px;
   background-color: #e8f5ff;
-  margin: 1rem 0;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,8 +341,18 @@ a.navtabs__name {
 
 }
 
-.allmain__item:hover {
-  opacity: 0.25;
+.allmain__item-title {
+  color: #1779BA;
+  opacity: 1;
+  transition: opacity 10s ease-in-out 1s;
+}
+
+.allmain__item:hover img {
+  opacity: 0.2;
+}
+
+.allmain__item:hover .allmain__item-title {
+  opacity: 0.2;
 }
 
 .allmain__item-img {
@@ -348,8 +360,19 @@ a.navtabs__name {
 }
 
 .allmain__item-link {
-  opacity: 1;
+  opacity: 0;
   display: none;
+  z-index: 10;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.5rem;
+  
+  transition: opacity 10s ease-in-out 10s;
+}
+
+.allmain__item:hover .allmain__item-link {
+  display: block;
+  opacity: 1;
 }
 
 .font-bold {
