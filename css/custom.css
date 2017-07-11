@@ -400,4 +400,19 @@ a.navtabs__name {
     display: none;
   }
 
+  .allmain__item-link {
+  display: block;
+  opacity: 1;
+  position: relative;
+  font-size: 1rem;
+}
+
+.allmain__item:hover .allmain__item-img {
+  opacity: 1;
+}
+
+.allmain__item:hover .allmain__item-title {
+  opacity: 1;
+}
+
 }
