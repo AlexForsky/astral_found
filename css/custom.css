@@ -297,7 +297,7 @@ a.navtabs__name {
 
 .advantages__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: center;
   margin: 1rem 0;
