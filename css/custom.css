@@ -416,3 +416,15 @@ a.navtabs__name {
 }
 
 }
+
+@media screen and (min-width: 2000px) {
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .allmain {
+    max-width: 85rem;
+  }
+
+}
