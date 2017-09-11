@@ -309,6 +309,11 @@ a.navtabs__name {
   font-size: 3.5rem;
   color: #1779BA;
 }
+
+.advantages__item-icon__table {
+  font-size: 1.5rem;
+  color: #666666;
+}
  
 .advantages__item-text {
   color: grey;
@@ -416,6 +421,8 @@ a.navtabs__name {
   opacity: 1;
 }
 
+thead {
+  position: fixed;
 }
 
 @media screen and (min-width: 2000px) {
