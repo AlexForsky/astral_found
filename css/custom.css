@@ -421,9 +421,7 @@ a.navtabs__name {
   opacity: 1;
 }
 
-thead {
-  position: fixed;
-}
+
 
 @media screen and (min-width: 2000px) {
 
@@ -435,4 +433,9 @@ thead {
     max-width: 85rem;
   }
 
+}
+
+
+.td_center {
+  text-align: center !important;
 }
