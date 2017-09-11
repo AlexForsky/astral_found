@@ -436,6 +436,10 @@ a.navtabs__name {
 }
 
 
-.td_center {
-  text-align: center !important;
+.td_col_1 {
+  width: 37%;
+}
+
+.td_col_other {
+  width: 21%;
 }
