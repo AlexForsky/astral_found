@@ -31,9 +31,7 @@
      <div class="main__left small-12 medium-4 large-3 columns" data-sticky-container>
         <div class="sticky" data-sticky data-margin-top="0"> <!--по уолчанию data-margin-top="0"-->
          <ul class="menu vertical">
-            <li><a href="astral.html" class="font-bold">АстралОтчет</a></li>
-            <li ><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a></li>
-            <li ><a href="tarif_ao.html">АстралОтчет - тарифы</a></li>
+            <li><a href="astral.html" >АстралОтчет</a></li>
             <li><a href="1creport.html">1С-Отчетность</a></li>
             <li class="active"><a href="1cetp.html">1С-ЭТП</a>
               <ul class="nested vertical menu">
@@ -59,7 +57,9 @@
     <ul class="tabs" data-tabs id="etp_tarif">
       <li class="tabs-title is-active"><a class="navtabs__name" href="#etp_base" aria-selected="true">Базис</a></li>
       <li class="tabs-title"><a class="navtabs__name" href="#etp_b2b">B2B</a></li>
-      <li class="tabs-title"><a class="navtabs__name" href="#etp_gov">ГОСЗАКАЗ</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#etp_gov">Госзаказ</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#etp_comm">Коммерческий</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#etp_average">Расширенный</a></li>
     </ul>
     <!--Конец навигация по вкладкам -->
 
@@ -69,7 +69,8 @@
     <div class="tabs-panel is-active tabs-panel__custom" id="etp_base">
     <div class="tarif__mo__baz ">
         <div class="tarif__name">
-            <h3 >Тариф «Базис» </h3><br>
+            <h3 >Тариф «Базис» </h3>
+            <p class="tarif_annotation">Квалифицированная подпись</p><br>
             <h5>Тариф включает в себя:</h5>
             <ul class="tarif_description">
               <li><p>квалифицированный сертификат электронной подписи.</p></li>
@@ -99,7 +100,8 @@
       <div class="tabs-panel tabs-panel__custom" id="etp_b2b">
       <div class="tarif__mo__baz ">
         <div class="tarif__name">
-            <h3 >Тариф «B2B» </h3><br>
+            <h3 >Тариф «B2B» </h3>
+            <p class="tarif_annotation">Торговые площадки группы B2B-Center</p><br>
             <h5>Тариф включает в себя:</h5>
             <ul class="tarif_description">
               <li><p>квалифицированный сертификат электронной подписи.</p></li>
@@ -131,7 +133,8 @@
       <div class="tabs-panel tabs-panel__custom" id="etp_gov">
       <div class="tarif__mo__baz ">
         <div class="tarif__name">
-            <h3 >Тариф «ГОСЗАКАЗ» </h3><br>
+            <h3 >Тариф «ГОСЗАКАЗ» </h3>
+            <p class="tarif_annotation">5 федеральных площадок</p><br>
             <h5>Тариф включает в себя:</h5>
             <ul class="tarif_description">
               <li><p>неквалифицированный сертификат электронной подписи.</p></li>
@@ -158,6 +161,74 @@
       </div>
       </div>
       <!-- Конец вкладка госзаказ -->
+      
+      <!-- вкладка Коммерческий -->
+      <div class="tabs-panel tabs-panel__custom" id="etp_comm">
+      <div class="tarif__mo__baz ">
+        <div class="tarif__name">
+            <h3 >Тариф «Коммерческий» </h3>
+            <p class="tarif_annotation">Коммерческие площадки</p><br>
+            <h5>Тариф включает в себя:</h5>
+            <ul class="tarif_description">
+              <li><p>квалифицированный сертификат электронной подписи.</p></li>
+              
+            </ul>
+          </div>
+          <hr>
+          <h5>Тариф позволяет:</h5>
+          <ul class="tarif_description">
+              <li><p>участвовать в торгах на электронных торговых площадках группы В2В-Center;</p></li>
+              <li><p>участвовать в торгах на электронных торговых площадках АЭТП;</p></li>
+              <li><p>участвовать в торгах на электронной торговой площадке "Фабрикант";</p></li>
+              <li><p>участвовать в торгах по № 223-ФЗ "О закупках товаров, работ, услуг отдельными видами юридических лиц";</p></li>
+              <li><p>участвовать в торгах по реализации имущества банкротов;</p></li>
+              <li><p>работать на государственных порталах;</p></li>
+              <li><p>осуществлять юридически значимый защищенный электронный документооборот;</p></li>
+              <li><p>системы раскрытия информации (Интерфакс, СКРИН, АЗИПИ, AK&M, ПРАЙМ).</p></li>
+            </ul>
+          <hr>  
+          <div class="tarif__prise">
+            <h5>Цена тарифа:</h5>
+            <p><span class="prise_font ">5750</span> рублей в год</p>
+            
+          </div> 
+      </div>
+      </div>
+      <!-- Конец вкладка Коммерческий -->
+
+      <!-- вкладка Расширенный -->      
+        <div class="tabs-panel tabs-panel__custom" id="etp_average">
+      <div class="tarif__mo__baz ">
+        <div class="tarif__name">
+            <h3 >Тариф «Расширенный» </h3>
+            <p class="tarif_annotation">Госзаказ + В2В</p><br>
+            <h5>Тариф включает в себя:</h5>
+            <ul class="tarif_description">
+              <li><p>неквалифицированный сертификат электронной подписи.</p></li>
+              <li><p>квалифицированный сертификат электронной подписи.</p></li>
+            </ul>
+          </div>
+          <hr>
+          <h5>Тариф позволяет:</h5>
+          <ul class="tarif_description">
+              <li><p>участвовать в торгах на федеральных электронных торговых площадках по № 44-ФЗ "О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд";</p></li>
+              <li><p>участвовать в торгах на электронных торговых площадках группы В2В-Center;</p></li>
+              <li><p>участвовать в торгах по № 223-ФЗ "О закупках товаров, работ, услуг отдельными видами юридических лиц";</p></li>
+              <li><p>участвовать в торгах на коммерческих электронных торговых площадках;</p></li>
+              <li><p>участвовать в торгах по реализации имущества банкротов;</p></li>
+              <li><p>работать на государственных порталах;</p></li>
+              <li><p>осуществлять юридически значимый защищенный электронный документооборот;</p></li>
+              <li><p>системы раскрытия информации (Интерфакс, СКРИН, АЗИПИ, AK&M, ПРАЙМ).</p></li>
+            </ul>
+          <hr>  
+          <div class="tarif__prise">
+            <h5>Цена тарифа:</h5>
+            <p><span class="prise_font ">6450</span> рублей в год</p>
+            
+          </div> 
+      </div>
+      </div>
+      <!-- Конец вкладка Расширенный -->
 
       <!--Расширения тарифа-->
         <div class="tarif__exp">
