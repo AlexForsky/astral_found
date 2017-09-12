@@ -390,6 +390,16 @@ a.navtabs__name {
   font-weight: bold;
 }
 
+.td_col_1 {
+  width: 37%;
+}
+
+.td_col_other {
+  width: 21%;
+}
+
+
+
 
 
 @media screen and (max-width: 650px) {
@@ -436,10 +446,3 @@ a.navtabs__name {
 }
 
 
-.td_col_1 {
-  width: 37%;
-}
-
-.td_col_other {
-  width: 21%;
-}
