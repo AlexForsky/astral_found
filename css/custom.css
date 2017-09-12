@@ -398,7 +398,9 @@ a.navtabs__name {
   width: 21%;
 }
 
-
+.table__title {
+  text-align: center;
+}
 
 
 
