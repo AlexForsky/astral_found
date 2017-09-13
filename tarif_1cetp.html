@@ -47,12 +47,14 @@
      <div class="main__right small-12 medium-8 large-9 columns">
      <!-- Общий -->
      <h3 class="tarif__title">Тарифы 1С-ЭТП</h3>
-     <article class="tarif_annotation">Программный пакет «Астрал Отчет» позволяет пользователю независимо от выбранного им тарифа сдавать отчетную документацию как минимум в два контролирующих органа (их выбор осуществляется заказчиком самостоятельно), производить сверку с ФНС и ПФР, а также обмениваться с ними неформализованной документацией в режиме реального времени. Кроме того, пользователь, приобретающий ПО, получает цифровую подпись для работы с электронной документацией.</article>
+     <!--
+     <article class="tarif_annotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laborum odit laboriosam, consectetur voluptatum, at, beatae vel adipisci quod eum totam sequi nemo facere dolores minus eaque omnis. Eius, quod.</article>
      <br>
+     -->
      <!--Конец блока Общий  --> 
 
      <!-- Тариф Московская область -->
-    <h4>Тарифы, действющие на территории Московской области</h4>
+    <!-- <h4>Тарифы</h4> -->
     <!-- Навигация по вкладкам -->
     <ul class="tabs" data-tabs id="etp_tarif">
       <li class="tabs-title is-active"><a class="navtabs__name" href="#etp_base" aria-selected="true">Базис</a></li>
@@ -60,6 +62,8 @@
       <li class="tabs-title"><a class="navtabs__name" href="#etp_gov">Госзаказ</a></li>
       <li class="tabs-title"><a class="navtabs__name" href="#etp_comm">Коммерческий</a></li>
       <li class="tabs-title"><a class="navtabs__name" href="#etp_average">Расширенный</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#etp_egais">ЕГАИС</a></li>
+      <li class="tabs-title"><a class="navtabs__name" href="#etp_ofd">ОФД</a></li>
     </ul>
     <!--Конец навигация по вкладкам -->
 
@@ -230,6 +234,64 @@
       </div>
       <!-- Конец вкладка Расширенный -->
 
+      <!-- вкладка ЕГАИС -->
+      <div class="tabs-panel tabs-panel__custom" id="etp_egais">
+      <div class="tarif__mo__baz ">
+        <div class="tarif__name">
+            <h3 >Тариф «ЕГАИС» </h3>
+            <p class="tarif_annotation">Квалифицированная подпись для работы с ЕГАИС ФС РАР</p><br>
+            <h5>Тариф включает в себя:</h5>
+            <ul class="tarif_description">
+              <li><p>квалифицированный сертификат электронной подписи.</p></li>
+              
+            </ul>
+          </div>
+          <hr>
+          <h5>Тариф позволяет:</h5>
+          <ul class="tarif_description">
+              <li><p>осуществлять юридически значимый защищенный электронный документооборот с ЕГАИС ФСРАР.</p></li>
+              
+            </ul>
+          <hr>  
+          <div class="tarif__prise">
+            <h5>Цена тарифа:</h5>
+            <p><span class="prise_font ">2000</span> рублей в год</p>
+            <p class="tarif_annotation"><i class="fi-alert etp__text-alert"></i> К тарифу "ЕГАИС" нельзя подключить дополнительные расширения.</p>
+          </div> 
+      </div>
+      </div>
+
+      <!-- Конец вкладка ЕГАИС -->
+
+      <!--вкладка ОФД -->
+      <div class="tabs-panel tabs-panel__custom" id="etp_ofd">
+      <div class="tarif__mo__baz ">
+        <div class="tarif__name">
+            <h3 >Тариф «ОФД» </h3>
+            <p class="tarif_annotation">Квалифицированная подпись для регистрации ККТ</p><br>
+            <h5>Тариф включает в себя:</h5>
+            <ul class="tarif_description">
+              <li><p>квалифицированный сертификат электронной подписи.</p></li>
+              
+            </ul>
+          </div>
+          <hr>
+          <h5>Тариф позволяет:</h5>
+          <ul class="tarif_description">
+              <li><p>регистрировать контрольно-кассовую технику в личном кабинете на сайте ФНС;</p></li>
+              <li><p>осуществлять юридически значимый защищенный электронный документооборот;</p></li>
+              <li><p>работать на государственных порталах.</p></li>
+            </ul>
+          <hr>  
+          <div class="tarif__prise">
+            <h5>Цена тарифа:</h5>
+            <p><span class="prise_font ">900</span> рублей в год</p>
+            <p class="tarif_annotation"><i class="fi-alert etp__text-alert"></i> К тарифу "ОФД" нельзя подключить дополнительные расширения.</p>
+          </div> 
+      </div>
+      </div>
+      <!--конец вкладка ОФД -->
+
       <!--Расширения тарифа-->
         <div class="tarif__exp">
           <h4 class="tarif__exp-title">Дополнительные расширения:</h4>
@@ -247,7 +309,9 @@
           <h4 class="tarif__exp-title">Дополнительные услуги:</h4>
           <hr>
           <p>Защищенный носитель JaCarta LT: <span class="prise_font20">1000</span> р.</p>
-          
+          <p>Защищенный носитель JaCarta PKI/ГОСТ/SE: <span class="prise_font20">2000</span> р. <i class="fi-info etp__text-alert"></i></p>
+          <p>Защищенный носитель Рутокен ЭЦП 2.0: <span class="prise_font20">1600</span> р. <i class="fi-info etp__text-alert"></i></p>
+          <p class="tarif_annotation"><i class="fi-info etp__text-alert"></i> Используется совместно с тарифом ЕГАИС</p>
         </div>
 
 
