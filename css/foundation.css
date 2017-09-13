@@ -3493,7 +3493,7 @@ table {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold; }
   table thead {
-    background: #f8f8f8;
+    background: #cccccc; /* по умолчанию f8f8f8*/
     color: #0a0a0a; }
   table tfoot {
     background: #f1f1f1;
