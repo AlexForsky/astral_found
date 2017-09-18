@@ -81,9 +81,9 @@
     </header>
 
     <section class="karusel">
-      <div class="orbit orbit__box" role="region" data-orbit>
+      <div class="orbit orbit__box" role="region" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out">
       <ul class="orbit-container">
-        <li class="orbit-slide is-active">
+        <li class="orbit-slide is-active" >
           <div class="orbit__box-slide">
             <div class="orbit__box-slide__right"><img src="img/aorep.png" alt="АстралОтчет"></div>
             <div class="orbit__box-slide__left"><h3 class="slider__title">АстралОтчет</h3>
@@ -92,7 +92,7 @@
             </div>
           </div>
         </li>
-        <li class="orbit-slide">
+        <li class="orbit-slide" >
           <div class="orbit__box-slide">
             <div class="orbit__box-slide__right"><img src="img/1crep_slide.png" alt="1С-Отчетность"></div>
             <div class="orbit__box-slide__left"><h3 class="slider__title">1С-Отчетность</h3>
@@ -102,7 +102,7 @@
           </div>  
         </li>
         <li class="orbit-slide">
-          <div class="orbit__box-slide">
+          <div class="orbit__box-slide" >
             <div class="orbit__box-slide__right"><img src="img/sign_slide.png" alt="1С-ЭТП"></div>
             <div class="orbit__box-slide__left"><h3 class="slider__title">1С-ЭТП</h3>
             <p class="slider__text">Инновационный комплексный сервис, позволяющий существенно упростить процедуру подготовки и участия в государственных электронных торгах.</p>
@@ -111,7 +111,7 @@
           </div>  
         </li>
         <li class="orbit-slide">
-          <div class="orbit__box-slide">
+          <div class="orbit__box-slide" >
             <div class="orbit__box-slide__right"><img src="img/1cproduct_slide.png" alt="Программы 1С"></div>
             <div class="orbit__box-slide__left"><h3 class="slider__title">Программы 1С</h3>
             <p class="slider__text">Программы 1С – это линейка современных продуктов делового назначения. Комплекс решений предназначен для автоматизации ведения налогового, бухгалтерского, оперативного, производственного и управленческого учета, расчета заработной платы и реализации кадровой политики.</p>
@@ -119,7 +119,7 @@
             </div>
           </div>  
         </li>
-        <li class="orbit-slide">
+        <li class="orbit-slide" >
           <div class="orbit__box-slide">
             <div class="orbit__box-slide__right"><img src="img/its_slide.png" alt="Сопровождение 1С"></div>
             <div class="orbit__box-slide__left"><h3 class="slider__title">Сопровождение 1С</h3>
@@ -131,7 +131,21 @@
         
         <!-- More slides... -->
       </ul>
+      
+       <!--Orbit navigation -->
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr"></span><span class="show-for-sr"></span></button>
+        <button data-slide="1"><span class="show-for-sr"></span></button>
+        <button data-slide="2"><span class="show-for-sr"></span></button>
+        <button data-slide="3"><span class="show-for-sr"></span></button>
+        <button data-slide="4"><span class="show-for-sr"></span></button>
+      </nav>
+
+      <!-- End orbit navigation -->
+
       </div>
+                 
+     
     </section>
 
     <section class="allmain">

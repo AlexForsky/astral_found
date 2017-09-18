@@ -253,6 +253,7 @@ a.navtabs__name {
 .karusel {
   background-color: #e8f5ff;
   min-height: 350px;
+  padding-bottom: 0.5em;
 }
 
 .orbit__box {
