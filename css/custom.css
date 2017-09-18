@@ -11,7 +11,9 @@
   align-items: center;
 }
 
- 
+ .header__adress_link {
+  color: white;
+ }
 
 /* Увеличение размера шрифта в заголовках аккордеона*/
 .accordion-title_fontsize {
