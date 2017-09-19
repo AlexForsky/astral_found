@@ -337,6 +337,10 @@ a.navtabs__name {
   margin: 0 auto;
 }
 
+.allmain__link {
+  text-align: center;
+}
+
 .allmain__item {
   min-width: 300px;
   min-height: 200px;
@@ -387,6 +391,7 @@ a.navtabs__name {
 .allmain__item:hover .allmain__item-link {
   display: block;
   opacity: 1;
+
 }
 
 .allmain__programm {
