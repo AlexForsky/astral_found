@@ -37,6 +37,31 @@
             <li><a href="1cproduct.html">Программы 1С</a></li>
             <li><a href="contakt.html">Контакты</a></li>
           </ul>
+
+		<!--Pop up block -->
+		<hr>
+		<p><button class="button slider__button" data-open="serviceModal">Заказать сопровождение</button></p>
+		<hr>
+
+		<div class="reveal" id="serviceModal" data-reveal>
+		  <h2>Заказ сопровождения</h2>
+		  <form class="service__form" action="php/service_send.php">
+		  	<label for="service__form_name">Ваше имя:</label>
+		  	<input type="text" name="service__form_name" required="" placeholder="Ваше имя:">
+		  	<label for="service__form_email">Ваш e-mail:</label>
+		  	<input type="text" name="service__form_email" placeholder="Ваш e-mail:">
+		  	<label for="service__form_phone">Ваш телефон:</label>
+		  	<input type="text" name="service__form_phone" placeholder="Ваш телефон:">
+		  	<label for="service__form_message">Текст сообщения:</label>
+		  	<textarea name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
+		  	<input type="submit" name="" class="button">
+		  </form>
+		  <button class="close-button" data-close aria-label="Close modal" type="button">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<!-- End_Pop_up_block-->	
+
         </div>
 
         
