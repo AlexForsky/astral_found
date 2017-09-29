@@ -19,7 +19,7 @@
     <span class="header__right">
        <a class="header__adress_link" href="contakt.html"><i class="fi-marker"></i>&nbsp;МО, г.Клин, ул. Мира, д.3, оф.314 </a><br> 
           <i class="fi-telephone"></i>&nbsp;+7(496) 243-36-86 <br>
-          <i class="fi-mobile-signal"></i>&nbsp;&nbsp;+7(903) 173-21-85
+          <i class="fi-mobile-signal"></i>&nbsp;&nbsp;+7(903) 173-21-85<br>
           <a class="header__adress_link" href="mailto:astral@gk-soft.ru"><i class="fi-at-sign"></i>&nbsp;&nbsp;astral@gk-soft.ru</a>
     </span>
    </header>
@@ -45,7 +45,7 @@
 
 		<div class="reveal" id="serviceModal" data-reveal>
 		  <h2>Заказ сопровождения</h2>
-		  <form class="service__form" action="php/service_send.php">
+		  <form class="service__form" action="php/service_send.php" method="POST">
 		  	<label for="service__form_name">Ваше имя:</label>
 		  	<input type="text" name="service__form_name" required="" placeholder="Ваше имя:">
 		  	<label for="service__form_email">Ваш e-mail:</label>
@@ -55,6 +55,7 @@
 		  	<label for="service__form_message">Текст сообщения:</label>
 		  	<textarea name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
 		  	<input type="submit" name="" class="button">
+		  	<input type="reset" name="" class="button" value="Очистить поля">
 		  </form>
 		  <button class="close-button" data-close aria-label="Close modal" type="button">
 		    <span aria-hidden="true">&times;</span>
