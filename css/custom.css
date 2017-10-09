@@ -476,6 +476,8 @@ table {
   font-size: 1.2rem;
 }
 
+
+
 @media screen and (max-width: 650px) {
   .menu > li > a.group__name {
     padding: 0.2rem;
