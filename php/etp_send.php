@@ -36,12 +36,12 @@ $from = iconv("utf-8", "windows-1251", $from);
 if (mail($address, $sub, $mes, $from)) {
  header('Refresh: 5; URL=http://astral.gk-soft.ru/1cetp.html');
  echo '<head>
-    <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/service.html"/><meta charset="utf-8"/></head>
+    <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/1cetp.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу 1С-ЭТП</body>';}
 else {
  header('Refresh: 5; URL=http://astral.gk-soft.ru/1cetp.html');
  echo '<head>
-    <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/service.html"/><meta charset="utf-8"/></head>
+    <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/1cetp.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу 1С-ЭТП</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
