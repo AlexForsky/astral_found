@@ -38,7 +38,31 @@
             <li><a href="contakt.html">Контакты</a></li>
           </ul>
         </div>
+          <!--Pop up block -->
+    <hr>
+    <p><button class="button slider__button shake1" data-open="serviceModal">Заказать программу 1С</button></p>
+    <hr>
 
+    <div class="reveal" id="serviceModal" data-reveal>
+      <h2>Заказ программы 1С</h2>
+      <form class="service__form" action="php/product_send.php" method="POST">
+        <label for="service__form_name">Ваше имя:</label>
+        <input type="text" name="service__form_name" required="" placeholder="Ваше имя:">
+        <label for="service__form_email">Ваш e-mail:</label>
+        <input id="service__form_email" type="email" name="service__form_email" placeholder="Ваш e-mail:" required="">
+        <label for="service__form_phone">Ваш телефон в формате +7-ххх-ххх-хх-хх:</label>
+        <input id="service__form_phone" type="text" name="service__form_phone" placeholder="Ваш телефон:" >
+        <label for="service__form_message">Наименование необходимой программы:</label>
+        <textarea name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
+        <input name="bezspama" type="text" style="display:none" value="" />
+        <input type="submit" name="" class="button">
+        <input type="reset" name="" class="button" value="Очистить поля">
+      </form>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!-- End_Pop_up_block-->
         
      </div>
 
@@ -119,5 +143,6 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/maskedinput.js"></script>
   </body>
 </html>
