@@ -46,18 +46,18 @@
 
         <!--Pop up block -->
     <hr>
-    <p><button class="button slider__button shake1" data-open="serviceModal">Заказать сопровождение</button></p>
+    <p><button class="button slider__button shake1" data-open="serviceModal">Заказать подпись</button></p>
     <hr>
 
     <div class="reveal" id="serviceModal" data-reveal>
-      <h2>Заказ сопровождения</h2>
+      <h2>Заказ электронной подписи</h2>
       <form class="service__form" action="php/etp_send.php" method="POST">
         <label for="service__form_name">Ваше имя:</label>
         <input type="text" name="service__form_name" required="" placeholder="Ваше имя:">
         <label for="service__form_email">Ваш e-mail:</label>
         <input id="service__form_email" type="email" name="service__form_email" placeholder="Ваш e-mail:" required="">
         <label for="service__form_phone">Ваш телефон в формате +7-ххх-ххх-хх-хх:</label>
-        <input id="service__form_phone" type="text" name="service__form_phone" placeholder="Ваш телефон:" required="">
+        <input id="service__form_phone" type="text" name="service__form_phone" placeholder="Ваш телефон:" >
         <label for="service__form_message">Текст сообщения:</label>
         <textarea name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
         <input name="bezspama" type="text" style="display:none" value="" />
@@ -106,6 +106,8 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/custom.js">
+    <script src="js/maskedinput.js"></script>  
+    </script>
   </body>
 </html>
