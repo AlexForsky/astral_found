@@ -13,7 +13,7 @@ $message = urldecode($_POST["service__form_message"]);
 $bezspama = htmlspecialchars($_POST["bezspama"]);
 $date_today = date("d.m.y H:i"); 
 /* Ваш адрес и тема сообщения */
-$address = "aa_a@bk.ru, unp@gk-soft.ru";
+$address = "sale@gk-soft.ru, nso@gk-soft.ru";
 $sub = "Заказ сопровождения";
 $sub = iconv("utf-8", "windows-1251", $sub);
 
