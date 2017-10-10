@@ -38,12 +38,12 @@ if (mail($address, $sub, $mes, $from)) {
  header('Refresh: 5; URL=http://astral.gk-soft.ru/tarif_ao.html');
  echo '<head>
     <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/tarif_ao.html"/><meta charset="utf-8"/></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Nfhbas АстралОтчет</body>';}
+    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Тарифы АстралОтчет</body>';}
 else {
  header('Refresh: 5; URL=http://astral.gk-soft.ru/tarif_ao.html');
  echo '<head>
     <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/tarif_ao.html"/><meta charset="utf-8"/></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Nfhbas АстралОтчет</body>';}
+    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Тарифы АстралОтчет</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
 ?>
