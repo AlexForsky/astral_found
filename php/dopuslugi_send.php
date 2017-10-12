@@ -1,3 +1,4 @@
+
 <?php
  
 /* Задаем переменные */
@@ -12,13 +13,13 @@ $message = urldecode($_POST["service__form_message"]);
 $bezspama = htmlspecialchars($_POST["bezspama"]);
 $date_today = date("d.m.y H:i"); 
 /* Ваш адрес и тема сообщения */
-$address = "sale@gk-soft.ru, astral@gk-soft.ru";
-$sub = "Заказ сопровождения";
+$address = "ea@gk-soft.ru, unp@gk-soft.ru";
+$sub = "Вопрос по доп. услугам";
 $sub = iconv("utf-8", "windows-1251", $sub);
 
  
 /* Формат письма */
-$mes = "Заказ программы 1С с сайта.\n
+$mes = "Вопрос по доп. услугам.\n
 Имя отправителя: $name \n
 Электронный адрес отправителя: $email \n
 Телефон отправителя: $tel \n
@@ -34,15 +35,16 @@ if (empty($bezspama)) /* Оценка поля bezspama - должно быть 
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
 $from = iconv("utf-8", "windows-1251", $from);
 if (mail($address, $sub, $mes, $from)) {
- header('Refresh: 5; URL=http://gk-soft.ru/1cproduct.html');
+ header('Refresh: 5; URL=http://gk-soft.ru/dopuslugi.html');
  echo '<head>
-    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/1cproduct.html"/><meta charset="utf-8"/></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Программы 1С</body>';}
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/dopuslugi.html"/><meta charset="utf-8"/></head>
+    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Дополнительных услуг</body>';}
 else {
- header('Refresh: 5; URL=http://gk-soft.ru/1cproduct.html');
+ header('Refresh: 5; URL=http://gk-soft.ru/dopuslugi.html');
  echo '<head>
-    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/1cproduct.html"/><meta charset="utf-8"/></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Программы 1С</body>';}
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/dopuslugi.html"/><meta charset="utf-8"/></head>
+    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Дополнительных услуг</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
 ?>
+

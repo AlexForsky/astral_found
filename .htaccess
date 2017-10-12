@@ -1,0 +1,5 @@
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType fonts/eot "access plus 1 year"
+ExpiresByType fonts/woff "access plus 1 year"
+</IfModule>

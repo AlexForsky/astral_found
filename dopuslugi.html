@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1С-ЭТП</title>
+    <title>Дополнительные услуги</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
@@ -31,30 +31,25 @@
          <ul class="menu vertical">
             <li><a href="index.html">На главную</a></li>
             <li><a href="astral.html">АстралОтчет</a></li>
-            <li ><a href="1creport.html">1С-Отчетность</a></li>
+            <li><a href="1creport.html">1С-Отчетность</a></li>
             <li><a href="service.html">Обслуживание 1С</a></li>
-            <li class="active"><a href="1cetp.html">1С-ЭТП</a>
-              <ul class="nested vertical menu">
-                <li><a href="tarif_1cetp.html">Тарифы</a></li>
-                
-              </ul>
-            </li>
+            <li><a href="1cetp.html">1С-ЭТП</a></li>
             <li><a href="1cproduct.html">Программы 1С</a></li>
-            <li><a href="dopuslugi.html">Допонительные услуги</a></li>
+            <li  class="active"><a href="dopuslugi.html">Допонительные услуги</a></li>
             <li><a href="contakt.html">Контакты</a></li>
             <li><hr>
-              <button class="button slider__button shake1" data-open="serviceModal">Заказать подпись</button>
+              <button class="button slider__button shake1" data-open="serviceModal">Задать вопрос</button>
               <hr>
             </li>
           </ul>
         </div>
-
+        
         <!--Pop up block -->
     
 
     <div class="reveal" id="serviceModal" data-reveal>
-      <h2>Заказ электронной подписи</h2>
-      <form class="service__form" action="php/etp_send.php" method="POST">
+      <h2>Задать вопрос</h2>
+      <form class="service__form" action="php/dopuslugi_send.php" method="POST">
         <label for="service__form_name">Ваше имя:</label>
         <input type="text" name="service__form_name" required="" placeholder="Ваше имя:">
         <label for="service__form_email">Ваш e-mail:</label>
@@ -72,31 +67,41 @@
       </button>
     </div>
     <!-- End_Pop_up_block-->
-
         
      </div>
 
     <!-- Правый блок --> 
     <div class="main__right small-12 medium-8 large-9 columns">
      <!-- Общий -->
-      <div class="orbit__box-slide">
-        <div class="orbit__box-slide__right"><img src="img/sign_slide.png" alt="1С-ЭТП"></div>
-        <div class="orbit__box-slide__left"><h3 class="slider__title">1С-ЭТП</h3>
-          <p class="slider__text">Инновационный комплексный сервис, позволяющий существенно упростить процедуру подготовки и участия в государственных электронных торгах.</p>
-          
-        </div>
+    <div class="orbit__box-slide">
+      <div class="orbit__box-slide__right"><img src="img/dopuslugi/dopuslugi.png" alt="дополнительные услуги"></div>
+      <div class="orbit__box-slide__left">
+        <h3 class="slider__title">Дополнительные улуги</h3>
+        <p class="slider__text">Мы можем предложить вам подготовку разных видов разовых бухгалтерских, налоговых, отчетов, консультации по вопросам налогового и бухгалтерского законодательства, сдачу бухгалтерской отчетности.</p>
+        
       </div>
+    </div>
 
-    <!-- Описание -->
-      <div>
-        <h4 class="table__title">Сервис «1С-ЭТП», что это такое?</h4>
-        <p class="advantages__item-text">Предпосылкой создания «1С-ЭТП» является тот факт, что для участия в государственных торгах поставщикам необходимо получить электронную подпись и пройти аккредитацию на тех электронных торговых площадках, на которых предполагается работать.</p><br>
-        <p class="advantages__item-text">Уникальность сервиса «1С-ЭТП» заключается в том, что все действия по получению электронной подписи пользователь осуществляет на своём рабочем месте.</p><br>
-        <p class="advantages__item-text">Для работы с ЕГАИС предусмотрен продукт «1С-ЭТП ЕГАИС» , позволяющий получить сертификат и осуществлять обмен информации о производстве и реализации алкогольной продукции с контролирующем органом. </p><br>
-
-        <h4 class="table__title">1С-ЭТП ЕГАИС</h4>
-        <p class="advantages__item-text">ЕГАИС — это автоматизированная система учета производства и оборота алкогольной и спиртосодержащей продукции. По сути, это централизованная база данных о произведенных и реализованных алкогольных напитках на территории России. Правила функционирования системы утверждены Постановлением Правительства РФ № 522 от 25.05. 2006 г.</p><br>
+    <!-- Преимущества -->
+    <div class="advantages">
+      <div class="advantages__item">
+        <i class="fi-comments advantages__item-icon"></i>
+        <p class="advantages__item-text">Помощь в заполнении заявлений и налоговых делараций.</p>
       </div>
+      <div class="advantages__item">
+        <i class="fi-upload advantages__item-icon"></i>
+        <p class="advantages__item-text">Передача налоговой и бухгалтерской отчетности в ИФНС.</p>
+      </div>
+      <div class="advantages__item">
+        <i class="fi-wrench advantages__item-icon"></i>
+        <p class="advantages__item-text">Восстановление бухгалтерского учета.</p>
+      </div>
+      <div class="advantages__item">
+        <i class="fi-graph-trend advantages__item-icon"></i>
+        <p class="advantages__item-text">Гибкая ценовая политика.</p>
+      </div>
+      
+    </div>
 
     </div> 
     
@@ -110,7 +115,7 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-    <script src="js/maskedinput.js"></script>  
+    <script src="js/maskedinput.js"></script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17781811 = new Ya.Metrika({ id:17781811, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/17781811" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   </body>
 </html>

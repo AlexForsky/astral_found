@@ -35,14 +35,14 @@ if (empty($bezspama)) /* Оценка поля bezspama - должно быть 
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
 $from = iconv("utf-8", "windows-1251", $from);
 if (mail($address, $sub, $mes, $from)) {
- header('Refresh: 5; URL=http://astral.gk-soft.ru/service.html');
+ header('Refresh: 5; URL=http://gk-soft.ru/service.html');
  echo '<head>
-    <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/service.html"/><meta charset="utf-8"/></head>
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/service.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу 1С-Сопровождение</body>';}
 else {
- header('Refresh: 5; URL=http://astral.gk-soft.ru/service.html');
+ header('Refresh: 5; URL=http://gk-soft.ru/service.html');
  echo '<head>
-    <meta http-equiv="refresh" content="5; URL=http://astral.gk-soft.ru/service.html"/><meta charset="utf-8"/></head>
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/service.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу 1С-Сопровождение</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
