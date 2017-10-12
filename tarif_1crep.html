@@ -58,16 +58,16 @@
       <h2>Подключение к 1С-Отчетности</h2>
       <form class="service__form" action="php/tarif_1crep.php" method="POST">
         <label for="service__form_name">Ваше имя:</label>
-        <input type="text" name="service__form_name" required="" placeholder="Ваше имя:">
+        <input id="service__form_name" type="text" name="service__form_name" required="" placeholder="Ваше имя:">
         <label for="service__form_email">Ваш e-mail:</label>
         <input id="service__form_email" type="email" name="service__form_email" placeholder="Ваш e-mail:" required="">
         <label for="service__form_phone">Ваш телефон в формате +7-ххх-ххх-хх-хх:</label>
         <input id="service__form_phone" type="text" name="service__form_phone" placeholder="Ваш телефон:" >
         <label for="service__form_message">Текст сообщения:</label>
-        <textarea name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
-        <input name="bezspama" type="text" style="display:none" value="" />
-        <input type="submit" name="" class="button">
-        <input type="reset" name="" class="button" value="Очистить поля">
+        <textarea id="service__form_message" name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
+        <input name="bezspama" type="checkbox" style="display:none" value="" />
+        <input type="submit" name="btn__submit" class="button">
+        <input type="reset" name="btn__reset" class="button" value="Очистить поля">
       </form>
       <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>

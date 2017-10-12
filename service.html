@@ -5,10 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1С-Сопровождение</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" >
   </head>
   <body>
@@ -57,8 +54,8 @@
 		  	<label for="service__form_phone">Ваш телефон в формате +7-ххх-ххх-хх-хх:</label>
 		  	<input id="service__form_phone" type="text" name="service__form_phone" placeholder="Ваш телефон:" required="">
 		  	<label for="service__form_message">Текст сообщения:</label>
-		  	<textarea name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
-		  	<input name="bezspama" type="text" style="display:none" value="" />
+		  	<textarea id="service__form_message" name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
+		  	<input name="bezspama" type="checkbox" style="display:none" value="" />
 		  	<input type="submit" name="btn__submit" class="button">
 		  	<input type="reset" name="btn__reset" class="button" value="Очистить поля">
 		  </form>
@@ -92,7 +89,7 @@
         <p class="advantages__item-text">С нашими клиентами мы выстраиваем доверительные, ориентированные на долгосрочную перспективу, отношения.</p><br>
         <p class="advantages__item-text">Клиенты — наша главная ценность, гордость и предмет нашей заботы.</p><br>
         <p class="advantages__item-text">Для удобства пользователей мы разработали  несколько тарифов  абонентского обслуживания:</p><br>
-        <h4 class="table__title">Перечень и стоимость услуг, входящих в тарифы</h4 class="table__title">
+        <h4 class="table__title">Перечень и стоимость услуг, входящих в тарифы</h4>
         <table class="hover ">
           <thead  >
             <tr >
@@ -318,6 +315,10 @@
    </section>
     
      <footer class="footer"><em><a href="index.html" title="На главную страницу">ООО "АстралСофт"</a> &copy; 2011-2017</em></footer>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
