@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /php
+Host: https://www.gk-soft.ru
+sitemap: https://gk-soft.ru/sitemap.xml
