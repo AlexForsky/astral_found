@@ -14,7 +14,7 @@ $bezspama = htmlspecialchars($_POST["bezspama"]);
 $date_today = date("d.m.y H:i"); 
 /* Ваш адрес и тема сообщения */
 $address = "support@gk-soft.ru, astral@gk-soft.ru";
-$sub = "Заказ сопровождения";
+$sub = "Вопрос со страницы контактов";
 $sub = iconv("utf-8", "windows-1251", $sub);
 
  
