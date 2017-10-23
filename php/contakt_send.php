@@ -11,6 +11,8 @@ $tel = urldecode($_POST["service__form_phone"]);
 $message = htmlspecialchars($_POST["service__form_message"]);
 $message = urldecode($_POST["service__form_message"]);
 $bezspama = htmlspecialchars($_POST["bezspama"]);
+$spam = htmlspecialchars($_POST["service__form_spam"]);
+$spam = urldecode($_POST["service__form_spam"]);
 $date_today = date("d.m.y H:i"); 
 /* Ваш адрес и тема сообщения */
 $address = "support@gk-soft.ru, astral@gk-soft.ru";
@@ -29,7 +31,7 @@ $message \n
 $mes = iconv("utf-8", "koi8-r", $mes);
 
  
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
+if (empty($bezspama) && $spam == 8) /* Оценка поля bezspama - должно быть пустым*/
 {
 /* Отправляем сообщение, используя mail() функцию */
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
@@ -44,7 +46,12 @@ else {
  echo '<head>
     <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/contakt.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Контакты</body>';}
-}
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
+
+ /* Выход без сообщения, если поле bezspama заполнено спам ботами */} else {
+ header('Refresh: 5; URL=http://gk-soft.ru/contakt.html');
+ echo '<head>
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/contakt.html"/><meta charset="utf-8"/></head>
+    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу Контакты</body>';}
+
 ?>
 
