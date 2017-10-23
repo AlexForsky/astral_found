@@ -51,7 +51,7 @@ else {
  header('Refresh: 5; URL=http://gk-soft.ru/contakt.html');
  echo '<head>
     <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/contakt.html"/><meta charset="utf-8"/></head>
-    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу Контакты</body>';}
+    <body>Письмо не отправлено, неверно заполнены поля для запроса, возможно вы спам-бот.</body>';}
 
 ?>
 
