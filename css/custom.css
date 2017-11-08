@@ -414,6 +414,10 @@ a.navtabs__name {
   font-weight: bold;
 }
 
+.font_1_2_rem {
+  font-size: 1.2rem;
+}
+
 .td_col_1 {
   width: 37%;
 }
