@@ -245,6 +245,12 @@ a.navtabs__name {
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: bold;
+  
+}
+
+a.header__title:hover {
+  
+  color: #ffffff;
 }
 
 .header__right {
