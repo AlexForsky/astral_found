@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html class="no-js" lang="ru" dir="ltr">
   <head>
@@ -243,4 +244,251 @@
     <script src="js/maskedinput.js"></script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17781811 = new Ya.Metrika({ id:17781811, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/17781811" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   </body>
+=======
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АстралОтчет - тарифы</title>
+    <meta name="keywords" content="АстралОтчет, ЭЦП, отчетность, цена">
+    <meta name="description" content="Стоимость лицензий для сдачи отчетности">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" >
+  </head>
+  <body>
+   <header class="header">
+     <span class="header__left">
+       <a href="index.html" class="header__title">АстралСофт</a>
+    </span>
+    <span class="header__right">
+          <a class="header__adress_link" href="contakt.html"><i class="fi-marker"></i>&nbsp;МО, г.Клин, ул. Мира, д.3, оф.314 </a><br> 
+          <i class="fi-telephone"></i>&nbsp;+7(496) 243-36-86 <br>
+          <i class="fi-mobile-signal"></i>&nbsp;&nbsp;+7(903) 173-21-85
+          <a class="header__adress_link" href="mailto:astral@gk-soft.ru"><i class="fi-at-sign"></i>&nbsp;&nbsp;astral@gk-soft.ru</a>
+    </span>
+   </header>
+
+   <section class="main row">
+   <!-- Левый блок - меню-->
+     <div class="main__left small-12 medium-4 large-3 columns" data-sticky-container>
+        <div class="sticky" data-sticky data-margin-top="0"> <!--по уолчанию data-margin-top="0"-->
+         <ul class="menu vertical">
+            <li><a href="index.html">На главную</a></li>
+            <li><a href="astral.html" class="font-bold">АстралОтчет</a></li>
+            <li ><a href="vopros_ao.html">АстралОтчет - вопросы и ответы</a></li>
+            <li class="active"><a href="tarif_ao.html">Тарифы</a>
+              <ul class="nested vertical menu tarif__menu">
+                <li class="tarif__menu-item"><a href="tarif_ao.html">Московская область</a></li>
+                <li class="tarif__menu-item active_menu"><a href="tarif_ao_m">Москва</a></li>
+                <li class="tarif__menu-item"><a href="tarif_ao_tver.html">Тверь и Тверская область</a></li>
+              </ul>
+            </li>
+            <li><a href="1creport.html">1С-Отчетность</a></li>
+            <li><a href="service.html">Обслуживание 1С</a></li>
+            <li><a href="1cetp.html">1С-ЭТП</a></li>
+            <li><a href="1cproduct.html">Программы 1С</a></li>
+            <li><a href="dopuslugi.html">Допонительные услуги</a></li>
+            <li><a href="contakt.html">Контакты</a></li>
+            <li>
+              <hr>
+                <button class="button slider__button shake1 font-bold" data-open="serviceModal">Подключиться к АстралОтчет</button>
+                <hr>
+            </li>
+          </ul>
+        </div>
+
+         <!--Pop up block -->
+        
+
+        <div class="reveal" id="serviceModal" data-reveal>
+          <h2>Подключиться к АстралОтчет</h2>
+          <form class="service__form" action="php/astraltarif_send.php" method="POST">
+            <label for="service__form_name">Ваше имя:</label>
+            <input id="service__form_name" type="text" name="service__form_name" required="" placeholder="Ваше имя:">
+            <label for="service__form_email">Ваш e-mail:</label>
+            <input id="service__form_email" type="email" name="service__form_email" placeholder="Ваш e-mail:" required="">
+            <label for="service__form_phone">Ваш телефон в формате +7-ххх-ххх-хх-хх:</label>
+            <input id="service__form_phone" type="text" name="service__form_phone" placeholder="Ваш телефон:" >
+            <label for="service__form_message">Текст сообщения:</label>
+            <textarea id="service__form_message" name="service__form_message" required="" placeholder="Текст сообщения"></textarea>
+            <input name="bezspama" type="checkbox" style="display:none" value="" />
+            <input type="submit" name="btn__submit" class="button slider__button">
+            <input type="reset" name="btn__reset" class="button slider__button" value="Очистить поля">
+          </form>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+    <!-- End_Pop_up_block-->
+     </div>
+
+    <!-- Правый блок - вопросы ответы--> 
+     <div class="main__right small-12 medium-8 large-9 columns">
+     <!-- Общий -->
+     <h3 class="tarif__title">Тарифы «Астрал Отчет»</h3>
+     <article class="tarif_annotation">Программный пакет «Астрал Отчет» позволяет пользователю независимо от выбранного им тарифа сдавать отчетную документацию как минимум в два контролирующих органа (их выбор осуществляется заказчиком самостоятельно), производить сверку с ФНС и ПФР, а также обмениваться с ними неформализованной документацией в режиме реального времени. Кроме того, пользователь, приобретающий ПО, получает цифровую подпись для работы с электронной документацией.</article>
+     <br>
+     <!--Конец блока Общий  --> 
+
+
+        <!-- Тариф Москва -->
+        <h4>Тарифы, действющие на территории г. Москва</h4>
+        <!-- Навигация по вкладкам -->
+        <ul class="tabs" data-tabs id="tarif_mo-tabs">
+          <li class="tabs-title is-active"><a class="navtabs__name" href="#base_mo" aria-selected="true">Базовый</a></li>
+          <li class="tabs-title"><a class="navtabs__name" href="#opt_mo">Оптимальный</a></li>
+          <li class="tabs-title"><a class="navtabs__name" href="#group_mo">Группа компаний</a></li>
+        </ul>
+        <!--Конец навигация по вкладкам -->
+
+        <div class="tabs-content tabs-content__margin" data-tabs-content="tarif_mo-tabs">
+
+        <!-- Вкладка Базовый -->
+        <div class="tabs-panel is-active tabs-panel__custom" id="base_mo">
+        <div class="tarif__mo__baz ">
+        
+          <div class="tarif__name">
+            <h3 >Тариф «Базовый» <span class="tarif_annotation">(Москва)</span></h3>
+            
+            <ul class="tarif_description">
+              <li><p>Сдача отчетности в ДВА любых контролирующих органа по выбору (ФНС, ПФР, ФСС, РОССТАТ)</p></li>
+              <li><p>Выдача одной ЭЦП</p></li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>Выбрать налоговый режим</h4>
+            <ul class="menu menu_baz">
+              <li class="active baz" data-prise-baz="6300" data-prise-baz-dop="5700"><a >ОСНО</a></li>
+              <li class="baz" data-prise-baz="3900" data-prise-baz-dop="3500"><a>УСНО</a></li>
+              <li class="baz" data-prise-baz="4000" data-prise-baz-dop="3600"><a>Бюджет</a></li>
+              <li class="baz" data-prise-baz="2900" data-prise-baz-dop="2600"><a>ИП</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="tarif__prise">
+            <h5>Цена тарифа с учетом формы юридического лица и налогообложения:</h5>
+            <p><span class="prise_font data-price-baz_text">6300</span> рублей в год - основной абонент</p>
+            <p><span class="prise_font data-price-baz_text_dop">5700</span> рублей в год - дополнительный абонент*</p>
+          </div> 
+      </div>
+      </div>
+      <!--Конец вкладка базовый -->
+
+      <!--Вкладка оптимальный -->
+      <div class="tabs-panel tabs-panel__custom" id="opt_mo">
+      <div class="tarif__mo__opt ">
+        
+          <div class="tarif__name">
+            <h3 >Тариф «Оптимальный» <span class="tarif_annotation">(Москва)</span></h3>
+            <ul class="tarif_description">
+              <li><p>Сдача отчетности в четыре контролирующих органа (ФНС, ПФР, ФСС, РОССТАТ)</p></li>
+              <li><p>Выдача одной ЭЦП</p></li>
+              <li><p>Сверка лицевых счетов с ИФНС, ПФР</p></li>
+              <li><p>Доступ к выпискам из ЕГРЮЛ</p></li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>Выбрать налоговый режим</h4>
+            <ul class="menu menu_opt">
+              <li class="active opt" data-prise-opt="10500" data-prise-opt-dop="9500"><a >ОСНО</a></li>
+              <li class="opt" data-prise-opt="7000" data-prise-opt-dop="6400"><a>УСНО</a></li>
+              <li class="opt" data-prise-opt="7500" data-prise-opt-dop="6800"><a>Бюджет</a></li>
+              <li class="opt" data-prise-opt="3900" data-prise-opt-dop="3500"><a>ИП</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="tarif__prise">
+            <h5>Цена тарифа с учетом формы юридического лица и налогообложения:</h5>
+            <p><span class="prise_font data-price-opt_text">10500</span> рублей в год - основной абонент</p>
+            <p><span class="prise_font data-price-opt_text_dop">9500</span> рублей в год - дополнительный абонент*</p>
+          </div> 
+      </div>
+      </div>
+      <!--Конец вкладка оптимальный -->
+
+      <!--Вкладка группа компаний  -->
+      <div class="tabs-panel tabs-panel__custom" id="group_mo">
+
+      <div class="tarif__mo__group ">
+        
+          <div class="tarif__name">
+            <h3 >Тариф «Группа компаний» <span class="tarif_annotation">(Москва)</span></h3>
+            <ul class="tarif_description">
+              <li><p>Сдача отчетности в четыре контролирующих органа (ФНС, ПФР, ФСС, РОССТАТ)</p></li>
+              <li><p>От четырех организаций</p></li>
+              <li><p>Выдача одной ЭЦП для каждой организации в группе</p></li>
+              <li><p>Сверка лицевых счетов с ИФНС, ПФР</p></li>
+              <li><p>Доступ к выпискам из ЕГРЮЛ</p></li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>Выбрать количество компаний</h4>
+            <ul class="menu menu_group">
+              <li class="active group" data-prise-group="3700"><a class="group__name">5-10</a></li>
+              <li class="group" data-prise-group="3300"><a class="group__name">11-20</a></li>
+              <li class="group" data-prise-group="2900"><a class="group__name">21-30</a></li>
+              <li class="group" data-prise-group="2400"><a class="group__name">31-40</a></li>
+              <li class="group" data-prise-group="1800"><a class="group__name">41-50</a></li>
+              <li class="group" data-prise-group="1600"><a class="group__name">50-100</a></li>
+              <li class="group" data-prise-group="1300"><a class="group__name">101-200</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="tarif__prise">
+            <h5>Цена тарифа с учетом формы юридического лица и налогообложения:</h5>
+            <p><span class="prise_font data-price-group_text">3700</span> рублей в год - за каждую организацию</p>
+            
+          </div> 
+      </div>
+      </div>
+      <!-- Конец вкладка группа компаний -->   
+        <!-- Конец тарифа Москва -->
+
+        <!--Расширения тарифа-->
+        <div class="tarif__exp">
+          <h4 class="tarif__exp-title">Расширение тарифа</h4>
+          <hr>
+          <p>Дополнительное направление в ИФНС (каждое дополнительное КПП) <span class="prise_font20">500</span> рублей</p>
+          <p>Открытие дополнительного направления сдачи отчетов <span class="prise_font20">2000</span> рублей</p>
+          <p>Подключение направления сдачи отчетов в РосАлкагольРегулирование <span class="prise_font20">3500</span> рублей</p>
+          <p>Информационная выписка из ЕГРЮЛ <span class="prise_font20">1000</span> рублей</p>
+          <p>Внеплановая смена сертификата ЭЦП (за один сертификат и его регистрацию) <span class="prise_font20">600</span> рублей</p>
+          <p>Электронный USB-ключ RuToken с объемом защищенной памяти 64 Кб <span class="prise_font20">1600</span> рублей</p>
+          <p>Установка ПО и консультации по работе с программой (за час работы) <span class="prise_font20">1584</span> рублей</p>
+        </div>
+
+      <!--Конец расширения тарифа-->
+
+      <!-- Примечание-->
+        <div class="notabene">
+          <h5 class="tarif__exp-title">Примечание</h5>
+          <hr>
+          <p><strong>Дополнительный абонент</strong> – это юридическое или физическое лицо подключенное следующим (вторым и далее) после подключения основного абонента.</p>
+          <p><strong>Тариф «Группа компаний»</strong> применяется при покупке 5 и более лицензий «Астрал Отчет». Направления сдачи отчетности ФНС, ПФР, ФСС, Росстат.</p>
+          
+        </div>
+      <!-- Конец примечание  -->
+      </div> 
+    </div>
+    <!-- Конец правого блока -->
+   </section>
+    
+     <footer class="footer"><em><a href="index.html" title="На главную страницу">ООО "АстралСофт"</a> &copy; 2011-2017</em></footer>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17781811 = new Ya.Metrika({ id:17781811, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/17781811" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  </body>
+>>>>>>> 982a92e738acbbfcd580a4f1927f090e557bbc4c
 </html>
