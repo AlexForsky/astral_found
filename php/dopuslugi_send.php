@@ -47,6 +47,10 @@ else {
     <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/dopuslugi.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Дополнительных услуг</body>';}
 }
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
+ /* Выход без сообщения, если поле bezspama заполнено спам ботами */ else {
+ header('Refresh: 5; URL=http://gk-soft.ru/dopuslugi.html');
+ echo '<head>
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/dopuslugi.html"/><meta charset="utf-8"/></head>
+    <body>Письмо не отправлено, неверно заполнены поля для запроса, возможно вы спам-бот.</body>';}
 ?>
 
