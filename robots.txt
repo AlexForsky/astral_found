@@ -5,3 +5,11 @@ Disallow: /js
 Disallow: /php
 Host: https://www.gk-soft.ru
 sitemap: https://gk-soft.ru/sitemap.xml
+
+User-agent: *
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /php
+Host: https://www.gk-soft.ru
+sitemap: https://gk-soft.ru/sitemap.xml
