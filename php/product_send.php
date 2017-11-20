@@ -13,7 +13,7 @@ $bezspama = htmlspecialchars($_POST["bezspama"]);
 $date_today = date("d.m.y H:i"); 
 /* Ваш адрес и тема сообщения */
 $address = "sale@gk-soft.ru, astral@gk-soft.ru";
-$sub = "Заказ сопровождения";
+$sub = "Заказ программы";
 $sub = iconv("utf-8", "windows-1251", $sub);
 
  
@@ -28,7 +28,7 @@ $message \n
 $mes = iconv("utf-8", "koi8-r", $mes);
 
  
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
+if (empty($bezspama) $spam == 7) /* Оценка поля bezspama - должно быть пустым*/
 {
 /* Отправляем сообщение, используя mail() функцию */
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
@@ -44,5 +44,9 @@ else {
     <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/1cproduct.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу Программы 1С</body>';}
 }
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
+ /* Выход без сообщения, если поле bezspama заполнено спам ботами */else {
+ header('Refresh: 5; URL=http://gk-soft.ru/1cproduct.html');
+ echo '<head>
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/1cproduct.html"/><meta charset="utf-8"/></head>
+    <body>Письмо не отправлено, неверно заполнены поля для запроса, возможно вы спам-бот.</body>';}
 ?>
