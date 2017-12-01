@@ -29,7 +29,7 @@ $message \n
 $mes = iconv("utf-8", "koi8-r", $mes);
 
  
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
+if (empty($bezspama) && $spam == 8) /* Оценка поля bezspama - должно быть пустым*/
 {
 /* Отправляем сообщение, используя mail() функцию */
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
@@ -45,6 +45,10 @@ else {
     <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/astral.html"/><meta charset="utf-8"/></head>
     <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу АстралОтчет</body>';}
 }
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
+/* Выход без сообщения, если поле bezspama заполнено спам ботами */else {
+ header('Refresh: 5; URL=http://gk-soft.ru/dopuslugi.html');
+ echo '<head>
+    <meta http-equiv="refresh" content="5; URL=http://gk-soft.ru/dopuslugi.html"/><meta charset="utf-8"/></head>
+    <body>Письмо не отправлено, неверно заполнены поля для запроса, возможно вы спам-бот.</body>';}
 ?>
 
