@@ -28,7 +28,7 @@ $message \n
 $mes = iconv("utf-8", "koi8-r", $mes);
 
  
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
+if (empty($bezspama) && $name != null) /* Оценка поля bezspama - должно быть пустым*/
 {
 /* Отправляем сообщение, используя mail() функцию */
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";

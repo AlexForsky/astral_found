@@ -11,9 +11,11 @@ $tel = urldecode($_POST["service__form_phone"]);
 $message = htmlspecialchars($_POST["service__form_message"]);
 $message = urldecode($_POST["service__form_message"]);
 $bezspama = htmlspecialchars($_POST["bezspama"]);
+$spam = htmlspecialchars($_POST["service__form_spam"]);
+$spam = urldecode($_POST["service__form_spam"]);
 $date_today = date("d.m.y H:i"); 
 /* Ваш адрес и тема сообщения */
-$address = "sale@gk-soft.ru, sale-kg@gk-soft.ru";
+$address = "sale@gk-soft.ru, sale-rep@gk-soft.ru, unp@gk-soft.ru";
 $sub = "Подключение к АстралОтчет";
 $sub = iconv("utf-8", "windows-1251", $sub);
 
@@ -29,7 +31,7 @@ $message \n
 $mes = iconv("utf-8", "koi8-r", $mes);
 
  
-if (empty($bezspama) && $spam == 8) /* Оценка поля bezspama - должно быть пустым*/
+if (empty($bezspama) && $spam == 8 && $name != null) /* Оценка поля bezspama - должно быть пустым*/
 {
 /* Отправляем сообщение, используя mail() функцию */
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
